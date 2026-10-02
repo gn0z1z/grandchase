@@ -1,0 +1,123 @@
+/* =====================================================================
+   IMAGENS DO SITE — é AQUI que você muda o nome dos arquivos
+   (abra este arquivo no Bloco de Notas; o navegador só entende CSS,
+   por isso a "lista de nomes" é um .css — mas é só trocar o texto)
+
+   COMO MUDAR UM NOME
+     Cada linha é:   .classe   { --img: url("pasta/arquivo.png"); }
+     Troque só o que está entre aspas. Ex.: "img/herois/ryan.png"
+     virou "img/herois/ryan-t.png"  → o site passa a usar esse arquivo.
+
+   PADRÃO DOS NOMES
+     • minúsculo, sem acento, sem espaço (use hífen)   • sempre .png
+     • herói = nome do herói          • categoria = nome da categoria
+     • imagem avulsa = assunto-detalhe (ex.: selo-pve)
+     • T / S que não têm arte própria podem reaproveitar o arquivo do SR:
+       .h-cindyt { --img: url("img/herois/cindy.png"); }
+
+   PASTAS
+     img/herois/            → os bonecos
+     img/categorias/        → atributos, classes e tipos de herói
+     img/avulsas/           → imagens soltas (Selos da Alma etc.)
+
+   SE O ARQUIVO NÃO EXISTIR, o site mostra um emoji/escudo no lugar.
+   ===================================================================== */
+
+/* =====================================================================
+   FUNDO DAS BOLINHAS  (para imagens com transparência)
+   ===================================================================== */
+
+:root {
+    /* cor atrás da imagem. Use  transparent  para ficar sem fundo nenhum,
+       ou uma cor sólida (#10284a) para esconder o que estiver por trás */
+    --bola-fundo: #10284a;
+}
+
+/* Quando as imagens já existirem, tire o emoji/escudo de reserva
+   (senão ele aparece pelas partes transparentes). Descomente as 2 linhas: */
+/* .ico  { --fb: none; } */
+/* .hero { --hero-fb: none; } */
+
+/* Outros ajustes (valem para todas; ou ponha na linha de UMA imagem):
+   .ico  { --ico-fit: contain; }   → mostra a imagem inteira, sem cortar
+   .ico  { --ico-size: 1.8em; }    → bolinha maior
+   .i-azul { --img: url("..."); --bola-fundo: #fff; }  → fundo só desse ícone */
+
+
+
+/* ========== 1) BONECOS (heróis) — img/herois/ ========== */
+
+/* AZUL */
+.h-ryan         { --img: url("img/herois/ryan.png"); }
+.h-lass         { --img: url("img/herois/lass.png"); }
+.h-bastett      { --img: url("img/herois/bastett.png"); }
+.h-amy          { --img: url("img/herois/amy.png"); }
+.h-liret        { --img: url("img/herois/liret.png"); }
+.h-maydent      { --img: url("img/herois/maydent.png"); }
+.h-jin          { --img: url("img/herois/jin.png"); }
+.h-armes        { --img: url("img/herois/armes.png"); }
+.h-vice         { --img: url("img/herois/vice.png"); }
+.h-karina       { --img: url("img/herois/karina.png"); }
+
+/* VERMELHO */
+.h-calit        { --img: url("img/herois/calit.png"); }
+.h-eles         { --img: url("img/herois/eles.png"); }
+.h-edel         { --img: url("img/herois/edel.png"); }
+.h-neption      { --img: url("img/herois/neption.png"); }
+.h-myriel       { --img: url("img/herois/myriel.png"); }
+.h-io           { --img: url("img/herois/io.png"); }
+.h-uno          { --img: url("img/herois/uno.png"); }
+.h-cindy        { --img: url("img/herois/cindy.png"); }
+.h-nelliat      { --img: url("img/herois/nelliat.png"); }
+.h-serdin       { --img: url("img/herois/serdin.png"); }
+.h-cindyt       { --img: url("img/herois/cindyt.png"); }
+.h-limes        { --img: url("img/herois/limes.png"); }
+.h-ganymedes    { --img: url("img/herois/ganymedes.png"); }
+
+/* VERDE */
+.h-tia          { --img: url("img/herois/tia.png"); }
+.h-ait          { --img: url("img/herois/ait.png"); }
+.h-ele          { --img: url("img/herois/ele.png"); }
+.h-vanessa      { --img: url("img/herois/vanessa.png"); }
+.h-bram         { --img: url("img/herois/bram.png"); }
+.h-iyoung       { --img: url("img/herois/iyoung.png"); }
+.h-lapis        { --img: url("img/herois/lapis.png"); }
+.h-lire         { --img: url("img/herois/lire.png"); }
+.h-lires        { --img: url("img/herois/lires.png"); }
+.h-deiat        { --img: url("img/herois/deiat.png"); }
+.h-urara        { --img: url("img/herois/urara.png"); }
+.h-reyt         { --img: url("img/herois/reyt.png"); }
+.h-grandielt    { --img: url("img/herois/grandielt.png"); }
+.h-mystt        { --img: url("img/herois/mystt.png"); }
+.h-rey          { --img: url("img/herois/rey.png"); }
+.h-agnecia      { --img: url("img/herois/agnecia.png"); }
+
+
+/* ========== 2) CATEGORIAS — img/categorias/ ========== */
+
+/* atributos */
+.i-verde        { --img: url("img/categorias/atributos/verde.png");--fb: none; }
+.i-azul         { --img: url("img/categorias/atributos/azul.png"); --fb: none;}
+.i-vermelho     { --img: url("img/categorias/atributos/vermelho.png"); --fb: none;}
+
+/* classes */
+.i-guerreiro    { --img: url("img/categorias/classes/warrior.png");--fb: none; }
+.i-atirador     { --img: url("img/categorias/classes/ranger.png"); --fb: none;}
+.i-mago         { --img: url("img/categorias/classes/mage.png"); --fb: none;}
+.i-guardiao     { --img: url("img/categorias/classes/tank.png"); --fb: none;}
+.i-sacerdote    { --img: url("img/categorias/classes/priest.png"); --fb: none;}
+.i-dps		{ --img: url("img/categorias/classes/dps.png"); --fb: none;}
+
+/* tipos de herói: SR = Super Raro · T = Troca de Classe · S = Especial */
+.i-sr           { --img: url("img/categorias/tipos/sr.png"); --fb: none;}
+.i-t            { --img: url("img/categorias/tipos/t.png"); --fb: none;}
+.i-s            { --img: url("img/categorias/tipos/sh.png"); --fb: none;}
+
+
+/* ========== 3) IMAGENS AVULSAS — img/avulsas/ ========== */
+/* Selos da Alma: --ar = proporção do print (largura / altura); ajuste se trocar a imagem */
+
+.o-selo-10      { --img: url("img/avulsas/selo-10.png"); --ar: 1215 / 601; }
+.o-selo-pve     { --img: url("img/avulsas/selo-pve.png"); --ar: 1210 / 597; }
+.o-selo-pvp     { --img: url("img/avulsas/selo-pvp.png"); --ar: 1215 / 598; }
+.o-selo-apoio   { --img: url("img/avulsas/selo-apoio.png"); --ar: 1737 / 1041; }
