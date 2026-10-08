@@ -5,12 +5,15 @@
 <meta name="description" content="Database do Grand Chase Mobile com guia de conteúdo, builds e estratégias para F2P.">
 <meta name="theme-color" content="#050c1a">
 <meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="stylus.css">
+<link rel="icon" type="image/png" href="img/emotes/logo.png">
 <title>GCM_DETONADO — Guia F2P de Grand Chase Mobile</title>
-<link rel="stylesheet" href="./stylus.css">
+
 </head>
 <body>
 <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
 <a class="back-top" href="#conteudo-principal" aria-label="Voltar ao topo" title="Voltar ao topo">↑</a>
+<noscript><p class="noscript-note">Menu mobile, janelas (Builds, Prioridades, Selos, Monte sua equipe) e ampliação de ícones precisam de JavaScript.</p></noscript>
 <h1 class="sr-hide">GCM_DETONADO — Guia F2P de Grand Chase Mobile</h1>
 
 <!-- Estados de navegação e modais; botões nativos conectados pelo script mínimo abaixo. -->
@@ -40,7 +43,7 @@
   <button type="button" class="menu-overlay" tabindex="-1" aria-label="Fechar menu" aria-hidden="true"></button>
   <header class="topbar">
     <button type="button" class="menu-btn" aria-label="Abrir ou fechar o menu" aria-controls="navigation-drawer" aria-expanded="false">☰</button>
-    <div class="traffic" aria-hidden="true"><span class="red"></span><span class="yellow"></span><span class="green"></span></div>
+    <img class="window-logo" src="img/emotes/logo.png" alt="Chase_OS">
     <div class="app-name">CHASE_OS (Guia)</div>
     <div class="online"><span>⚡⚡ F2P</span><span>📶 ONLINE</span></div>
   </header>
@@ -54,11 +57,13 @@
           <a href="#herois"><span class="emoji" aria-hidden="true">🧬</span> TIPOS DE HERÓI</a>
           <a href="#investimento"><span class="emoji" aria-hidden="true">💰</span> INVESTIMENTO</a>
           <a href="#equipes"><span class="emoji" aria-hidden="true">🧩</span> EQUIPES</a>
-          <a href="#diarios"><span class="emoji" aria-hidden="true">🔖</span> CONTEÚDO</a>
-          <a href="#conteudos"><span class="emoji" aria-hidden="true">💲</span> RECOMPENSAS</a>
+          <a href="#diarios"><span class="emoji" aria-hidden="true">🔖</span> CONTEÚDO DIÁRIO</a>
+          <a href="#conteudos"><span class="emoji" aria-hidden="true">🏆</span> DESAFIOS</a>
           <a href="#sisteminhas"><span class="emoji" aria-hidden="true">⚙️</span> SIST. MENORES</a>
+          <a href="#gemas-ciencia"><span class="emoji" aria-hidden="true">💎</span> GEMAS E CIÊNCIA</a>
           <a href="#interacoes"><span class="emoji" aria-hidden="true">🔗</span> INTERAÇÕES</a>
           <a href="#descendencia"><span class="emoji" aria-hidden="true">🕊️</span> DESCENDÊNCIA</a>
+          <a href="#pvp"><span class="emoji" aria-hidden="true">⚔️</span> PVP</a>
           <a href="#progressao"><span class="emoji" aria-hidden="true">⏱️</span> PROGRESSÃO</a>
         <div class="nav-sep">EXTRA</div>
         <button type="button" class="menu-toggle-label" data-modal-open="build-toggle" aria-controls="build-modal-box"><span class="emoji" aria-hidden="true">🛠️</span> BUILDS</button>
@@ -103,21 +108,7 @@ A pergunta correta:
     "Qual herói é mais valioso NESSE MOMENTO?"</div>
 
 
-<h3 class="sub-head">🎨 Legenda</h3>
-
-<div class="legend">
-<div class="legend-row"><b>RARIDADE</b><span><span class="ico i-sr" role="img" aria-label="Super Raro"></span> Super Raro</span><span><span class="ico i-t" role="img" aria-label="Troca de Classe"></span> Troca de Classe</span><span><span class="ico i-s" role="img" aria-label="Herói Especial"></span> Herói Especial</span></div>
-<div class="legend-row"><b>ATRIBUTO</b><span><span class="ico i-verde" role="img" aria-label="Verde"></span> Verde</span><span><span class="ico i-azul" role="img" aria-label="Azul"></span> Azul</span><span><span class="ico i-vermelho" role="img" aria-label="Vermelho"></span> Vermelho</span></div>
-<div class="legend-row"><b>FUNÇÃO</b><span><span class="ico i-guardiao" role="img" aria-label="Guardião"></span> Guardião</span><span><span class="ico i-guerreiro" role="img" aria-label="Guerreiro"></span> Guerreiro</span><span><span class="ico i-dps" role="img" aria-label="DPS"></span> DPS</span><span><span class="ico i-sacerdote" role="img" aria-label="Sacerdote"></span> Sacerdote</span></div>
-<div class="legend-row"><b>DANO</b><span><span class="ico i-mago" role="img" aria-label="Mago"></span> Mago</span><span><span class="ico i-atirador" role="img" aria-label="Atirador"></span> Atirador</span></div>
-<div class="legend-row"><b>ECONOMIA</b><span>💰 Custo</span><span>🪙 Ouro</span><span>💠 Cubos</span><span>🔘 Essências</span><span>🧿 Cristais</span><span>🫧 Gema Azul</span><span>⚡ Energia</span><span>🎟️ Bilhetes</span><span>🛠️ Materiais</span><span>🪨 Overdium</span><span>💲Recompensas</span></div>
-<div class="legend-row"><b>ESCALADA</b><span>⬆️ Aumentar</span><span>⬇️ Reduzir</span><span>🆙 Upgrade</span><span>🔓 Desbloqueio</span><span>🔒 Bloqueio</span><span>❤️‍🔥 Selo da Alma</span><span>🎯 Objetivo</span><span>⏱️ Tempo necessário</span></div>
-<div class="legend-row"><b>CONTEÚDO</b><span>🗺️ World Boss</span><span>🧭 Raid</span><span>🐙 Mar da Eternidade</span><span>🔨 Martelo</span><span>🌋 Fornalha</span><span>🏛️ Torre dos Desafios</span><span>🗡️ Torre dos Heróis</span><span>👾 Chefe de Guilda</span><span>🌀 Altar</span><span>🪺 Ninho</span><span>➿ Labirinto</span><span>💀 Extermínio</span><span>👹 Núcleo Final</span></div>
-<div class="legend-row"><b>PERFORMANCE</b><span>🏆 Score</span><span>💥 Dano</span><span>🛡️ Sobrevivência</span><span>🩸 Sustain</span><span>🪽 Velocidade</span><span>⚡ Battle Power</span><span>⌛ Tempo</span><span>🎯 Meta</span><span>📉 Perda</span><span>📈 Ganho</span></div>
-<div class="legend-row"><b>PRIORIDADE</b><span>⭐⭐⭐⭐⭐ máxima</span><span>⭐⭐⭐⭐ alta</span><span>⭐⭐⭐ média</span><span>⭐⭐ baixa</span><span>⭐ mínima</span></div>
-</div>
-
-<nav class="pager" aria-label="Paginação"><span class="off">« ANTERIOR</span><span class="count">[ 01 / 11 ]</span><a href="#geral">PRÓXIMO »</a></nav>
+<nav class="pager" aria-label="Paginação"><span class="off">« ANTERIOR</span><span class="count">[ 01 / 13 ]</span><a href="#geral">PRÓXIMO »</a></nav>
 
 </section>
 
@@ -135,11 +126,11 @@ O custo para evoluir um personagem é igual para todos.
                         </p>
 
 <div class="block">    • Chaser Nv.25
-        → 600 💠 Cubos + ≈900 🔘 Essências + ≈70kk de 🪙 Ouro
+        → 600 <img class="asset-icon" src="img/materiais/cubos.png" alt="" aria-hidden="true"> Cubos + ≈900 <img class="asset-icon" src="img/materiais/essencia.png" alt="" aria-hidden="true"> Essências + ≈70kk de 🪙 Ouro
     • ❤️‍🔥 Selo da Alma Nv.15
-        → 3000 💠 Cubos + ≈2500 🔘 Essências + ≈100kk de 🪙 Ouro
+        → 3000 <img class="asset-icon" src="img/materiais/cubos.png" alt="" aria-hidden="true"> Cubos + ≈2500 <img class="asset-icon" src="img/materiais/essencia.png" alt="" aria-hidden="true"> Essências + ≈100kk de 🪙 Ouro
     • 🕊️ Descendência Nv.10
-        → 38k de 🧿 Cristais + 6k de 🔘 Essências + 50kk de 🪙 Ouro</div>
+        → 38k de <img class="asset-icon" src="img/materiais/cristal.png" alt="" aria-hidden="true"> Cristais + 6k de <img class="asset-icon" src="img/materiais/essencia.png" alt="" aria-hidden="true"> Essências + 50kk de 🪙 Ouro</div>
 
                         <p>
 Portanto:
@@ -200,7 +191,7 @@ Se tu não for um Ranker:
 i.e. Herói B geralmente tem mais valor.
                         </p>
 
-<nav class="pager" aria-label="Paginação"><a href="#conceito">« ANTERIOR</a><span class="count">[ 02 / 11 ]</span><a href="#herois">PRÓXIMO »</a></nav>
+<nav class="pager" aria-label="Paginação"><a href="#conceito">« ANTERIOR</a><span class="count">[ 02 / 13 ]</span><a href="#herois">PRÓXIMO »</a></nav>
 
 </section>
 
@@ -260,7 +251,7 @@ Um Herói Especial pode ser:
     ★ Uma bênção para a conta, se chegar na hora certa.
     ☆ Um tanto faz, se você já tiver tudo pronto.</div>
 
-<nav class="pager" aria-label="Paginação"><a href="#geral">« ANTERIOR</a><span class="count">[ 03 / 11 ]</span><a href="#investimento">PRÓXIMO »</a></nav>
+<nav class="pager" aria-label="Paginação"><a href="#geral">« ANTERIOR</a><span class="count">[ 03 / 13 ]</span><a href="#investimento">PRÓXIMO »</a></nav>
 
 </section>
 
@@ -285,9 +276,9 @@ A recomendação geral é evoluir um personagem de cada vez.
 
 Porque cada recurso possui um gargalo diferente:
 
-    • 💠 Cubos.
-    • 🔘 Essências.
-    • 🧿 Cristais.
+    • <img class="asset-icon" src="img/materiais/cubos.png" alt="" aria-hidden="true"> Cubos.
+    • <img class="asset-icon" src="img/materiais/essencia.png" alt="" aria-hidden="true"> Essências.
+    • <img class="asset-icon" src="img/materiais/cristal.png" alt="" aria-hidden="true"> Cristais.
     • Equipamentos.</div>
 
 
@@ -336,7 +327,7 @@ O jogo constantemente exige:
 Não fique dependendo de um único herói ou de um único time para fazer tudo.
                         </p>
 
-<nav class="pager" aria-label="Paginação"><a href="#herois">« ANTERIOR</a><span class="count">[ 04 / 11 ]</span><a href="#equipes">PRÓXIMO »</a></nav>
+<nav class="pager" aria-label="Paginação"><a href="#herois">« ANTERIOR</a><span class="count">[ 04 / 13 ]</span><a href="#equipes">PRÓXIMO »</a></nav>
 
 </section>
 
@@ -362,7 +353,7 @@ Uma equipe normalmente possui:
 <h3 class="sub-head">🧩 Funções</h3>
 
 
-<div class="block">GUARDIÃO
+<div class="block"><span class="ico i-guardiao" role="img" aria-label="Guardião"></span> GUARDIÃO
     → Escudo de Carne
 
 <span class="ico i-guerreiro" role="img" aria-label="Guerreiro"></span> GUERREIRO
@@ -430,20 +421,20 @@ A diferença:
 
 <div class="team azul">
 <div class="team-name"><span class="ico i-azul" role="img" aria-label="Azul"></span> AZUL</div>
-<div class="team-row"><span class="tag">⚔️ PHYS</span> <span class="hero h-ryan">RYAN</span> <span class="hero h-lass">LASS</span> <span class="hero h-bastett">BASTET</span> <span class="hero h-amy">AMY</span> <span class="hero h-liret">LIRET</span> <span class="hero h-maydent">MAYDENT</span></div>
+<div class="team-row"><span class="tag">⚔️ PHYS</span> <span class="hero h-ryan">RYAN</span> <span class="hero h-lass">LASS</span> <span class="hero h-bastett">BASTET T</span> <span class="hero h-amy">AMY</span> <span class="hero h-liret">LIRET</span> <span class="hero h-maydent">MAYDENT</span></div>
 <div class="team-row"><span class="tag">🧙 MAG</span> <span class="hero h-jin">JIN</span> <span class="hero h-ryan">RYAN</span> <span class="hero h-armes">ARMES</span> <span class="hero h-vice">VICE</span> <span class="hero h-liret">LIRET</span> <span class="hero h-karina">KARINA</span> <span class="hero h-maydent">MAYDENT</span> <span class="hero h-amy">AMY</span></div>
 </div>
 
 <div class="team vermelho">
 <div class="team-name"><span class="ico i-vermelho" role="img" aria-label="Vermelho"></span> VERMELHO</div>
 <div class="team-row"><span class="tag">⚔️ PHYS</span> <span class="hero h-calit">CALIT</span> <span class="hero h-eles">ELES</span> <span class="hero h-edel">EDEL</span> <span class="hero h-neption">NEPTION</span> <span class="hero h-myriel">MYRIEL</span> <span class="hero h-io">IO</span> <span class="hero h-uno">UNO</span> <span class="hero h-cindy">CINDY</span> <span class="hero h-nelliat">NELLIAT</span> <span class="hero h-serdin">SERDIN</span></div>
-<div class="team-row"><span class="tag">🧙 MAG</span> <span class="hero h-calit">CALIT</span> <span class="hero h-eles">ELES</span> <span class="hero h-edel">EDEL</span> <span class="hero h-neption">NEPTION</span> <span class="hero h-myriel">MYRIEL</span> <span class="hero h-cindyt">CINDYT</span> <span class="hero h-limes">LIMES</span> <span class="hero h-ganymedes">GANYMEDES</span> <span class="hero h-nelliat">NELLIAT</span> <span class="hero h-serdin">SERDIN</span></div>
+<div class="team-row"><span class="tag">🧙 MAG</span> <span class="hero h-calit">CALIT</span> <span class="hero h-edel">EDEL</span> <span class="hero h-neption">NEPTION</span> <span class="hero h-cindyt">CINDYT</span> <span class="hero h-limes">LIMES</span> <span class="hero h-ganymedes">GANYMEDES</span> <span class="hero h-nelliat">NELLIAT</span> <span class="hero h-cindy">CINDY</span> </div>
 </div>
 
 <div class="team verde">
 <div class="team-name"><span class="ico i-verde" role="img" aria-label="Verde"></span> VERDE</div>
-<div class="team-row"><span class="tag">⚔️ PHYS</span> <span class="hero h-tia">TIA</span> <span class="hero h-ait">AIT</span> <span class="hero h-ele">ELE</span> <span class="hero h-vanessa">VANESSA</span> <span class="hero h-bram">BRAM</span> <span class="hero h-iyoung">IYOUNG</span> <span class="hero h-lapis">LAPIS</span> <span class="hero h-lire">LIRE</span> <span class="hero h-lires">LIRES</span> <span class="hero h-deiat">DEIAT</span> <span class="hero h-urara">URARA</span> <span class="hero h-reyt">REYT</span></div>
-<div class="team-row"><span class="tag">🧙 MAG</span> <span class="hero h-tia">TIA</span> <span class="hero h-ait">AIT</span> <span class="hero h-ele">ELE</span> <span class="hero h-vanessa">VANESSA</span> <span class="hero h-bram">BRAM</span> <span class="hero h-grandielt">GRANDIELT</span> <span class="hero h-mystt">MISTT</span> <span class="hero h-rey">REY</span> <span class="hero h-agnecia">AGNECIA</span> <span class="hero h-deiat">DEIAT</span> <span class="hero h-urara">URARA</span> <span class="hero h-reyt">REYT</span></div>
+<div class="team-row"><span class="tag">⚔️ PHYS</span> <span class="hero h-tia">TIA</span> <span class="hero h-ait">AIT</span> <span class="hero h-ele">ELE</span> <span class="hero h-vanessa">VANESSA</span> <span class="hero h-iyoung">IYOUNG</span> <span class="hero h-lapis">LAPIS</span> <span class="hero h-lire">LIRE</span> <span class="hero h-lires">LIRES</span> <span class="hero h-deiat">DEIAT</span> <span class="hero h-urara">URARA</span> <span class="hero h-reyt">REYT</span></div>
+<div class="team-row"><span class="tag">🧙 MAG</span> <span class="hero h-tia">TIA</span> <span class="hero h-ait">AIT</span> <span class="hero h-ele">ELE</span> <span class="hero h-bram">BRAM</span> <span class="hero h-grandielt">GRANDIELT</span> <span class="hero h-mystt">MISTT</span> <span class="hero h-rey">REY</span> <span class="hero h-agnecia">AGNECIA</span> <span class="hero h-deiat">DEIAT</span> <span class="hero h-urara">URARA</span> <span class="hero h-reyt">REYT</span></div>
 </div>
 
 
@@ -456,14 +447,14 @@ A diferença:
   <button type="button" class="team-builder-launch" data-modal-open="team-builder-toggle" aria-controls="team-builder-modal-box">🧩 MONTE SUA EQUIPE</button>
 </div>
 
-<nav class="pager" aria-label="Paginação"><a href="#investimento">« ANTERIOR</a><span class="count">[ 05 / 11 ]</span><a href="#diarios">PRÓXIMO »</a></nav>
+<nav class="pager" aria-label="Paginação"><a href="#investimento">« ANTERIOR</a><span class="count">[ 05 / 13 ]</span><a href="#diarios">PRÓXIMO »</a></nav>
 
 </section>
 
 <section id="diarios" class="page">
 
 
-<header class="sec-head"><h2>🔖 Conteúdo <span class="emote e-loot" role="img" aria-label="Ótimo saque"></span> </span> </h2></header>
+<header class="sec-head"><h2>🔖 Conteúdo Diário <span class="emote e-loot" role="img" aria-label="Ótimo saque"></span> </h2></header>
 
 
                         <p>
@@ -475,65 +466,44 @@ Pequenas recompensas repetidas todo dia se tornam grandes recursos a longo prazo
                         </p>
 
 
-<h3 class="sub-head">➿ Labirinto Fantasmagórico</h3>
+<h3 class="sub-head"><img class="asset-icon" src="img/content/labirinto.png" alt="" aria-hidden="true"> Labirinto Fantasmagórico</h3>
 
 <div class="block">🎁 Entrega:
 
-    → 750 Bênçãos
+    → 750 <img class="asset-icon" src="img/materiais/coragem.png" alt="" aria-hidden="true"> Coragens 
     → 400 frag. de Martelo de Ernasis</div>
 
 
-<h3 class="sub-head">🛡️ Defesa Diária</h3>
+<h3 class="sub-head"><img class="asset-icon" src="img/content/defesa.png" alt="Defesa Diária"> Defesa Diária</h3>
 
 <div class="block">🎁 Entrega:
 
-    → 90 Graças das Deusas
-    → 750 🫧 Gema Azul
-    → 15 Escolhas das Deusas</div>
+    → 90 <img class="asset-icon" src="img/materiais/bensadeusa.png" alt="" aria-hidden="true"> Graças das Deusas
+    → 750 <img class="asset-icon" src="img/materiais/gemaazul.png" alt="" aria-hidden="true"> Gema Azul
+</div>
 
-
-<h3 class="sub-head">💀 Modo Extermínio</h3>
-
-<div class="block">🎁 Entrega:
-
-    → 80 🧿 Cristais
-    → 20 💠 Cubos</div>
-
-
-<h3 class="sub-head">🔎 Procurado</h3>
+<h3 class="sub-head"><img class="asset-icon" src="img/content/exterminio.png" alt="" aria-hidden="true"> Modo Extermínio</h3>
 
 <div class="block">🎁 Entrega:
 
-    → Oro...</div>
+    → 80 <img class="asset-icon" src="img/materiais/cristal.png" alt="" aria-hidden="true"> Cristais
+    → 20 <img class="asset-icon" src="img/materiais/cubos.png" alt="" aria-hidden="true"> Cubos</div>
 
 
-<h3 class="sub-head">🏛️ Torre dos Desafios &amp; 🏛️  Torre dos Heróis</h3>
-
-                        <p>
-Não é diário, mas vamo colocar ele aq vai...<br>Além disso, vc precisa fazer de qqr jeito ou não faz boa parte das quests.
-                        </p>
+<h3 class="sub-head"><img class="asset-icon" src="img/content/procurado.png" alt="Procurado"> Procurado</h3>
 
 <div class="block">🎁 Entrega:
 
-    • 🎟️ Bilhetes de Gachapon.
-    • Bênçãos.
-    • Equipamentos exclusivos.
-    • Gemas e 🫧 Gema Azul.
-    • 🪙 Ouro.
-    • ⚡ Energia.
-    • Mais coisa.
+    → $$$...</div>
 
-Torre dos Heróis: Uma série de "puzzles"
-Torre dos desafios: Uma arena "PvP" só que com bot. Dá pra aprender um pouco sobre composições aqui...<br><br><i>(Por exemplo, se estiver passando fome, Ryan e Amy são usáveis em defesa)</i>
-maior o andar → melhor a recompensa.</div>
 
-<nav class="pager" aria-label="Paginação"><a href="#equipes">« ANTERIOR</a><span class="count">[ 06 / 11 ]</span><a href="#conteudos">PRÓXIMO »</a></nav>
+<nav class="pager" aria-label="Paginação"><a href="#equipes">« ANTERIOR</a><span class="count">[ 06 / 13 ]</span><a href="#conteudos">PRÓXIMO »</a></nav>
 
 </section>
 
 <section id="conteudos" class="page">
 
-<header class="sec-head"><h2>💲 Recompensas <span class="emote e-sparkle" role="img" aria-label="Brilhando"></span> </span> </h2></header>
+<header class="sec-head"><h2>🏆 Desafios <span class="emote e-sparkle" role="img" aria-label="Brilhando"></span> </h2></header>
 
                         <p>
 Cada modo de jogo possui uma função específica.
@@ -563,52 +533,52 @@ Existem conteúdos que entregam recursos que sua conta precisa.
                             <tbody>
 
                                 <tr>
-                                    <td>🌋 Fornalha Infernal</td>
+                                    <td><img class="asset-icon" src="img/content/vulcanus.png" alt="" aria-hidden="true"> Fornalha Infernal</td>
                                     <td>Gemas / ⚡ Energia / Queima x3</td>
                                 </tr>
 
                                 <tr>
-                                    <td>🗺️ World Boss Season 1</td>
-                                    <td>🔘 Essência / 💠 Cubos / 🧿 Cristais</td>
+                                    <td><img class="asset-icon" src="img/content/wb.png" alt="" aria-hidden="true"> World Boss Season 1</td>
+                                    <td><img class="asset-icon" src="img/materiais/essencia.png" alt="" aria-hidden="true"> Essência / <img class="asset-icon" src="img/materiais/cubos.png" alt="" aria-hidden="true"> Cubos / <img class="asset-icon" src="img/materiais/cristal.png" alt="" aria-hidden="true"> Cristais</td>
                                 </tr>
 
                                 <tr>
-                                    <td>🗺️ World Boss Season 2</td>
-                                    <td>💠 Cubos / 🧿 Cristais</td>
+                                    <td><img class="asset-icon" src="img/content/wb.png" alt="" aria-hidden="true"> World Boss Season 2</td>
+                                    <td><img class="asset-icon" src="img/materiais/cubos.png" alt="" aria-hidden="true"> Cubos / <img class="asset-icon" src="img/materiais/cristal.png" alt="" aria-hidden="true"> Cristais</td>
                                 </tr>
 
                                 <tr>
-                                    <td>🧭 RAID</td>
+                                    <td><img class="asset-icon" src="img/content/raid.png" alt="" aria-hidden="true"> RAID</td>
                                     <td>Equipamentos</td>
                                 </tr>
 
                                 <tr>
-                                    <td>🔨 Martelo de Ernasis</td>
+                                    <td><img class="asset-icon" src="img/content/ernasis.png" alt="" aria-hidden="true"> Martelo de Ernasis</td>
                                     <td>Joias</td>
                                 </tr>
 
                                 <tr>
-                                    <td>🐙 Mar da Eternidade</td>
+                                    <td><img class="asset-icon" src="img/content/mercuria.png" alt="" aria-hidden="true"> Mar da Eternidade</td>
                                     <td>Bênçãos</td>
                                 </tr>
 
                                 <tr>
-                                    <td>👾 Chefe de Guilda</td>
-                                    <td>Graças da Deusa</td>
+                                    <td><img class="asset-icon" src="img/content/guildboss.png" alt="" aria-hidden="true"> Chefe de Guilda</td>
+                                    <td><img class="asset-icon" src="img/materiais/bensadeusa.png" alt="" aria-hidden="true"> Graças da Deusa</td>
                                 </tr>
 
                                 <tr>
-                                    <td>👹 Núcleo Final</td>
+                                    <td><img class="asset-icon" src="img/content/nucleo.png" alt="" aria-hidden="true">  Núcleo Final</td>
                                     <td>BP / Passivas</td>
                                 </tr>
 
                                 <tr>
-                                    <td>🌀 Altar do Tempo</td>
+                                    <td><img class="asset-icon" src="img/content/altar.png" alt="" aria-hidden="true"> Altar do Tempo</td>
                                     <td>Relíquias</td>
                                 </tr>
 
                                 <tr>
-                                    <td>🪺 Ninho do Berkas</td>
+                                    <td><img class="asset-icon" src="img/content/berkas.png" alt="" aria-hidden="true"> Ninho do Berkas</td>
                                     <td>kkkkkkberka</td>
                                 </tr>
 
@@ -617,7 +587,7 @@ Existem conteúdos que entregam recursos que sua conta precisa.
                             </table>
                         </div>
 
-<h3 class="sub-head">🌋 Fornalha Infernal</h3>
+<h3 class="sub-head"><img class="asset-icon" src="img/content/vulcanus.png" alt="" aria-hidden="true"> Fornalha Infernal</h3>
 
                         <p>
 A Fornalha Infernal funciona de maneira diferente da maioria dos conteúdos.
@@ -663,7 +633,7 @@ Por isso fortalecer a conta vale muito mais do que apenas melhorar personagens.
                         </p>
 
 
-<h3 class="sub-head">🗺️ World Boss</h3>
+<h3 class="sub-head"><img class="asset-icon" src="img/content/wb.png" alt="" aria-hidden="true"> World Boss</h3>
 
                         <p>⭐⭐⭐⭐⭐ PRIORIDADE MÁXIMA</p>
 
@@ -671,14 +641,14 @@ Por isso fortalecer a conta vale muito mais do que apenas melhorar personagens.
 
 SEASON 1
 
-    • 🔘 Essência de Classe.
-    • 💠 Cubos de Crescimento.
-    • 🧿 Cristais Divinos.
+    • <img class="asset-icon" src="img/materiais/essencia.png" alt="" aria-hidden="true"> Essência de Classe.
+    • <img class="asset-icon" src="img/materiais/cubos.png" alt="" aria-hidden="true"> Cubos de Crescimento.
+    • <img class="asset-icon" src="img/materiais/cristal.png" alt="" aria-hidden="true"> Cristais Divinos.
 
 SEASON 2
 
-    • 💠 Cubos de Crescimento.
-    • 🧿 Cristais Divinos.</div>
+    • <img class="asset-icon" src="img/materiais/cubos.png" alt="" aria-hidden="true"> Cubos de Crescimento.
+    • <img class="asset-icon" src="img/materiais/cristal.png" alt="" aria-hidden="true"> Cristais Divinos.</div>
 
 
                         <p>
@@ -687,7 +657,7 @@ sempre vai estar entre eles.
                         </p>
 
 
-<h3 class="sub-head">🧭 Raids</h3>
+<h3 class="sub-head"><img class="asset-icon" src="img/content/raid.png" alt="" aria-hidden="true"> Raids</h3>
 
                         <p>⭐⭐⭐⭐ PRIORIDADE ALTA</p>
 
@@ -702,13 +672,13 @@ Sem bons equipamentos:
 Não adianta ter um boneco bom usando set 11.</div>
 
 
-<h3 class="sub-head">🐙 Mar da Eternidade</h3>
+<h3 class="sub-head"><img class="asset-icon" src="img/content/mercuria.png" alt="" aria-hidden="true"> Mar da Eternidade</h3>
 
                         <p>⭐⭐⭐ PRIORIDADE MÉDIA</p>
 
 <div class="block">🎁 Principal recompensa:
 
-    Maior fonte de Benção e Fragmentos da Coragem
+    Maior fonte de Bênção e Fragmentos da Coragem
     no começo/meio do jogo.</div>
 
 
@@ -721,13 +691,13 @@ Sobreviver a Mercuria não é necessário, basta bater a cota de dano.
                         </p>
 
 
-<h3 class="sub-head">🔨 Martelo de Ernasis</h3>
+<h3 class="sub-head"><img class="asset-icon" src="img/content/ernasis.png" alt="" aria-hidden="true"> Martelo de Ernasis</h3>
 
                         <p>⭐⭐⭐ PRIORIDADE MÉDIA</p>
 
 <div class="block">🎁 Principal recompensa:
 
-    • 🪨 Overdium
+    • <img class="asset-icon" src="img/materiais/overdiumrock.png" alt="" aria-hidden="true"> Overdium
     • 🪙 Ouro
 
 Essenciais para a Transcendência das armas.</div>
@@ -741,7 +711,7 @@ Tente sempre fazer o ciclo completo:
         O bônus é bom...</div>
 
 
-<h3 class="sub-head">👹 Núcleo Final</h3>
+<h3 class="sub-head"><img class="asset-icon" src="img/content/nucleo.png" alt="" aria-hidden="true"> Núcleo Final</h3>
 
                         <p>⭐⭐ PRIORIDADE BAIXA</p>
 
@@ -753,20 +723,20 @@ Tente sempre fazer o ciclo completo:
 É um investimento de longo prazo.</div>
 
 
-<h3 class="sub-head">👾 Chefe de Guilda</h3>
+<h3 class="sub-head"><img class="asset-icon" src="img/content/guildboss.png" alt="" aria-hidden="true"> Chefe de Guilda</h3>
 
                         <p>⭐⭐ PRIORIDADE BAIXA</p>
 
 <div class="block">🎁 Principal recompensa:
 
-    • Graças da Deusa.
+    • <img class="asset-icon" src="img/materiais/bensadeusa.png" alt="" aria-hidden="true"> Graças da Deusa.
 
 Vale participar sempre que possível.
 
 (Mais pra dar uma força pro clã msm).</div>
 
 
-<h3 class="sub-head">🌀 Altar do Tempo</h3>
+<h3 class="sub-head"><img class="asset-icon" src="img/content/altar.png" alt="" aria-hidden="true"> Altar do Tempo</h3>
 
                         <p>⭐ PRIORIDADE MÍNIMA</p>
 
@@ -777,7 +747,7 @@ Vale participar sempre que possível.
 Relíquias boas possuem grande impacto no endgame.</div>
 
 
-<h3 class="sub-head">🪺 Ninho do Berkas</h3>
+<h3 class="sub-head"><img class="asset-icon" src="img/content/berkas.png" alt="" aria-hidden="true"> Ninho do Berkas</h3>
 
                         <p>⭐ PRIORIDADE MÍNIMA</p>
 
@@ -787,13 +757,34 @@ Você ganha mais mascotes fazendo as missões diárias consistentemente, sendo s
 
 ...</div>
 
-<nav class="pager" aria-label="Paginação"><a href="#diarios">« ANTERIOR</a><span class="count">[ 07 / 11 ]</span><a href="#sisteminhas">PRÓXIMO »</a></nav>
+<h3 class="sub-head"><img class="asset-icon" src="img/content/torredesafios.png" alt="" aria-hidden="true"> Torre dos Desafios &amp; <img class="asset-icon" src="img/content/torreherois.png" alt="" aria-hidden="true"> Torre dos Heróis</h3>
+
+                        <p>
+Não é diário, mas vamo colocar ele aq vai...<br>Além disso, vc precisa fazer de qqr jeito ou não faz boa parte das quests.
+                        </p>
+
+<div class="block">🎁 Entrega:
+
+    • 🎟️ Bilhetes de Gachapon.
+    • Bênçãos.
+    • Equipamentos exclusivos.
+    • Gemas e <img class="asset-icon" src="img/materiais/gemaazul.png" alt="" aria-hidden="true"> Gema Azul.
+    • 🪙 Ouro.
+    • ⚡ Energia.
+    • Mais coisa.
+
+Torre dos Heróis: Uma série de "puzzles"
+Torre dos desafios: Uma arena "PvP" só que com bot. Dá pra aprender um pouco sobre composições aqui...<br><br><i>(Por exemplo, se estiver passando fome, Ryan e Amy são usáveis em defesa)</i>
+maior o andar → melhor a recompensa.</div>
+
+
+<nav class="pager" aria-label="Paginação"><a href="#diarios">« ANTERIOR</a><span class="count">[ 07 / 13 ]</span><a href="#sisteminhas">PRÓXIMO »</a></nav>
 
 </section>
 
 <section id="sisteminhas" class="page">
 
-<header class="sec-head"><h2>⚙️ Sistemas Menores <span class="emote e-puzzled" role="img" aria-label="Desconfiado"></span> </span> </h2></header>
+<header class="sec-head"><h2>⚙️ Sistemas Menores <span class="emote e-puzzled" role="img" aria-label="Desconfiado"></span> </h2></header>
 
 
 <h3 class="sub-head">💍 Acessórios</h3>
@@ -852,21 +843,68 @@ No Nv.9:
 
 Evolução:
 
-    Bronze → Prata → 🪙 Ouro → Platina</div>
+    Bronze → Prata → 🪙 Ouro → Platina
+</div>
 
+<figure class="research-figure">
+  <img src="img/avulsas/slotsdeequip.png" alt="" loading="lazy">
+  <figcaption>Foque sempre nos DPS's. Depois em guerreiros.</figcaption></figure>
 
 <div class="callout notice">CUIDADO
-
 ├── Muito 🪙 Ouro.
 ├── 🛠️ Material caro.
 └── RNG pesado.
 
                          Boa sorte kkkkj.</div>
 
-<nav class="pager" aria-label="Paginação"><a href="#conteudos">« ANTERIOR</a><span class="count">[ 08 / 11 ]</span><a href="#interacoes">PRÓXIMO »</a></nav>
+<nav class="pager" aria-label="Paginação"><a href="#conteudos">« ANTERIOR</a><span class="count">[ 08 / 13 ]</span><a href="#gemas-ciencia">PRÓXIMO »</a></nav>
 
 </section>
 
+<section id="gemas-ciencia" class="page">
+
+<header class="sec-head"><h2>💎 Gemas e Ciência! <span class="emote e-sparkle" role="img" aria-label="Brilhando"></span></h2></header>
+
+<p>Use o cash primeiro para liberar slots. A ideia é deixar o máximo possível de melhorias acontecendo ao mesmo tempo — confia.</p>
+
+<h3 class="sub-head">🎒 Slots e inventário</h3>
+<div class="callout"><strong>⚠️⚠️⚠️</strong>Libere slots para Expedição, Pesquisa e outras atividades. Aumente o inventário aos poucos...<br> não gaste invocando heróis...</div>
+
+<h3 class="sub-head">🔬 Pesquisa de atributos</h3>
+<p>Priorize estes atributos. Eles aumentam o Battle Power;</p>
+<ul class="research-grid" aria-label="Pesquisas de atributo prioritárias">
+  <li><img src="img/pesquisa/atkfisico.png" alt=""><strong>ATK</strong></li>
+  <li><img src="img/pesquisa/magicpwr.png" alt=""><strong>ATK Mágico</strong></li>
+  <li><img src="img/pesquisa/hp.png" alt=""><strong>Vitalidade</strong></li>
+  <li><img src="img/pesquisa/resistencia.png" alt=""><strong>Resistência</strong></li>
+  <li><img src="img/pesquisa/defesa.png" alt=""><strong>Defesa</strong></li>
+</ul>
+
+<h3 class="sub-head">🧪 Pesquisa de habilidades</h3>
+<p>Siga esta ordem inicial:</p>
+<ol class="research-order">
+  <li><img src="img/pesquisa/jesus.png" alt=""><span><strong>Ressurreição</strong> primeiro.</span></li>
+  <li><img src="img/pesquisa/cd.png" alt=""><span>Depois, <strong>Metabolismo Acelerado</strong>.</span></li>
+  <li><img src="img/pesquisa/purificar.png" alt=""><span>Em seguida, escolha <strong>Purificar</strong> ou <strong>Invencibilidade</strong>, conforme sua necessidade.</span></li>
+  <li><span class="research-order-number">4–5</span><span>Deixe <strong>Crescimento Excessivo</strong> para a quarta ou quinta prioridade.</span></li>
+</ol>
+
+<h3 class="sub-head">🛡️ Maestria de herói</h3>
+<div class="block">Leve todos os heróis ao Nv. 500. A partir daí, não dá mais para usar Fragmentos de Coragem: você precisa usar Coragem inteira.</div>
+
+<figure class="research-figure">
+  <img src="img/avulsas/coragemconversao.png" alt="Tela de aprimoramento de atributos e níveis de heróis" loading="lazy">
+  <figcaption>Você pode converter Coragem inteira em fragmentos e converter os fragmentos de volta em Coragem inteira. Sem imposto.</figcaption>
+</figure> Priorize atirador e magos.
+
+<figure class="research-figure">
+  <img src="img/pesquisa/Screenshot%202026-10-04%20233530.png" alt="Tela de aprimoramento de atributos e níveis de heróis" loading="lazy">
+  <figcaption>Exemplo da tela de pesquisa e progressão da maestria.</figcaption>
+</figure>
+
+<nav class="pager" aria-label="Paginação"><a href="#sisteminhas">« ANTERIOR</a><span class="count">[ 09 / 13 ]</span><a href="#interacoes">PRÓXIMO »</a></nav>
+
+</section>
 <section id="interacoes" class="page">
 
 <header class="sec-head"> <h2>🔗 Interações Importantes <span class="emote e-wink" role="img" aria-label="Piscadinha"> </span> </h2></header>
@@ -879,13 +917,10 @@ utilização.
 
 
 <!-- LIRES (S) INTERAÇÕES -->
-<h3 class="sub-head">
+<div class="desc-hero-name">
     <span class="ico i-s" role="img" aria-label="Herói Especial"></span>
-    <span class="hero h-lires">
-        <span>Lire S</span>
-    </span>
-    <span class="ico i-atirador" role="img" aria-label="Atirador"></span>
-</h3>
+    <span class="hero h-lires">Lire S<span class="ico i-atirador" role="img" aria-label="Atirador"></span></span>
+</div>
 
 <div class="block">Lire Especial é um boneco interessante...
 
@@ -894,17 +929,14 @@ Caso queira usá-la em Scoring Content:
     ├── Substituir o segundo DPS por:
     ├── Ai (T) ou outro Guardião
     └── Motivo:
-        └── Ela perde dano quando existe outro DPS na equipe.</div>
+		└── Ela perde dano quando existe outro DPS na equipe.</div>
 
 
 <!-- IO (SR) INTERAÇÕES -->
-<h3 class="sub-head">
+<div class="desc-hero-name">
     <span class="ico i-sr" role="img" aria-label="Super Raro"></span>
-    <span class="hero h-io">
-        <span>Io</span>
-    </span>
-    <span class="ico i-atirador" role="img" aria-label="Atirador"></span>
-</h3>
+    <span class="hero h-io">Io Júpiter<span class="ico i-atirador" role="img" aria-label="Atirador"></span></span>
+</div>
 
 <div class="block">Eu espero que você tenha CNH...
 
@@ -913,24 +945,20 @@ Io seria o melhor atirador do jogo se não precisasse ser pilotada manualmente.
     ├── Usa Selos Únicos.
     ├── Deixa as habilidades desligadas.
     └── Motivo:
-
-        ├── O dano da pestinha é puro auto atk.
-        ├── Ela precisa de acessórios diferentões...
-        │   E não dá pra deixar ela jogar sozinha.
-        ├── Sem selo:
-        │   Use S1 e S2 esporadicamente.
-        └── Com selo ativado:
+		├── O dano da pestinha é puro auto atk.
+		├── Ela precisa de acessórios e selos diferentões...
+		└── E não dá pra deixar ela jogar sozinha.
+		├── Sem selo:
+		├──   Use S1 e S2 esporadicamente.
+		└── Com selo ativado:
             Use somente Skill 1 (Justiça) a cada ≈13s.</div>
 
 
 <!-- ELESIS (S) INTERAÇÕES -->
-<h3 class="sub-head">
+<div class="desc-hero-name">
     <span class="ico i-s" role="img" aria-label="Herói Especial"></span>
-    <span class="hero h-eles">
-        <span>Elesis</span>
-    </span>
-    <span class="ico i-guerreiro" role="img" aria-label="Guerreiro"></span>
-</h3>
+    <span class="hero h-eles">Ele S<span class="ico i-guerreiro" role="img" aria-label="Guerreiro"></span></span>
+</div>
 
 <div class="block">Haverão sinais...Fortes sinais...
 
@@ -938,10 +966,9 @@ Formação de equipes não funciona direito com essa heroína
 
     ├── Mais do que simplesmente se dar bem com atiradores...
     └── ...Elesis (S) é uma enabler de Guerreiros
-        └── Se um conteúdo estiver difícil e por acaso você estiver usando a 
-		Ele S... tente colocar uma Edel ou um Neption junto... .
+        └── Se um conteúdo estiver difícil e por acaso você estiver usando a Ele S		...tente colocar uma Edel ou um Neption junto...
 </div>
-<nav class="pager" aria-label="Paginação"><a href="#sisteminhas">« ANTERIOR</a><span class="count">[ 09 / 11 ]</span><a href="#descendencia">PRÓXIMO »</a></nav>
+<nav class="pager" aria-label="Paginação"><a href="#gemas-ciencia">« ANTERIOR</a><span class="count">[ 10 / 13 ]</span><a href="#descendencia">PRÓXIMO »</a></nav>
 
 </section>
 
@@ -973,12 +1000,7 @@ Então até onde seu Herói precisa ir pra ser o monstro que nasceu pra ser?
 
         <div class="desc-hero-name">
             <span class="ico i-sr" role="img" aria-label="Super Raro"></span>
-
-            <span class="hero h-edel"></span>
-
-            Edel
-
-            <span class="ico i-guerreiro" role="img" aria-label="Guerreiro"></span>
+            <span class="hero h-edel">Edel<span class="ico i-guerreiro" role="img" aria-label="Guerreiro"></span></span>
         </div>
 
         <div class="desc-notes">
@@ -998,18 +1020,12 @@ Então até onde seu Herói precisa ir pra ser o monstro que nasceu pra ser?
 
         <div class="desc-hero-name">
             <span class="ico i-sr" role="img" aria-label="Super Raro"></span>
-
-            <span class="hero h-cindy"></span>
-
-            Cindy
-
-            <span class="ico i-sacerdote" role="img" aria-label="Sacerdote"></span>
+            <span class="hero h-cindy">Cindy<span class="ico i-sacerdote" role="img" aria-label="Sacerdote"></span></span>
         </div>
 
         <div class="desc-notes">
-            → D5 já é melhor que a Nellia (T).<br>
-            → D8 é amasso.<br>
-            → D10 é o que ela era no lançamento.
+            → D5 é melhor que a Nellia (T).<br>
+            → D8 ela amassa, e no D10 ela volta a ser oq era no lançamento<br>
         </div>
 
     </div>
@@ -1023,17 +1039,12 @@ Então até onde seu Herói precisa ir pra ser o monstro que nasceu pra ser?
 
         <div class="desc-hero-name">
             <span class="ico i-sr" role="img" aria-label="Super Raro"></span>
-
-            <span class="hero h-eles"></span>
-
-            Elesis
-
-            <span class="ico i-guerreiro" role="img" aria-label="Guerreiro"></span>
+            <span class="hero h-ele">Elesis<span class="ico i-guerreiro" role="img" aria-label="Guerreiro"></span></span>
         </div>
 
         <div class="desc-notes">
-            → D5 é o melhor Guerreiro em questão de sustain.<br>
-            → D10 desbloqueia os melhores buffs.
+            → D5 ela já tanka e buffa...<br>
+            → D10 é um tank fazendo cosplay de guerreiro.
         </div>
 
     </div>
@@ -1047,17 +1058,12 @@ Então até onde seu Herói precisa ir pra ser o monstro que nasceu pra ser?
 
         <div class="desc-hero-name">
             <span class="ico i-sr" role="img" aria-label="Super Raro"></span>
-
-            <span class="hero h-mari"></span>
-
-            Mari
-
-            <span class="ico i-mago" role="img" aria-label="Mago"></span>
+            <span class="hero h-mari">Mari<span class="ico i-mago" role="img" aria-label="Mago"></span></span>
         </div>
 
         <div class="desc-notes">
             → O próximo mago verde que você pegar (D) vai substituir ela.<br>
-            → Não se preocupe.
+            → Não perca tempo.
         </div>
 
     </div>
@@ -1071,17 +1077,12 @@ Então até onde seu Herói precisa ir pra ser o monstro que nasceu pra ser?
 
         <div class="desc-hero-name">
             <span class="ico i-t" role="img" aria-label="Troca de Classe"></span>
-
-            <span class="hero h-grandielt"></span>
-
-            Grandiel
-
-            <span class="ico i-mago" role="img" aria-label="Mago"></span>
+            <span class="hero h-grandielt">Grandiel T<span class="ico i-mago" role="img" aria-label="Mago"></span></span>
         </div>
 
         <div class="desc-notes">
-            → D0 já é um Buffer + 0,5 DPS.<br>
-            → D10 vira um DPS + Buffer.
+            → Eu diria que é um bom investimento...<br>
+            → D0 ele é um maguin que buffa magos... D10 ele é um mago que se buffa e buffa magos...
         </div>
 
     </div>
@@ -1095,12 +1096,7 @@ Então até onde seu Herói precisa ir pra ser o monstro que nasceu pra ser?
 
         <div class="desc-hero-name">
             <span class="ico i-sr" role="img" aria-label="Super Raro"></span>
-
-            <span class="hero h-iyoung"></span>
-
-            IYoung
-
-            <span class="ico i-atirador" role="img" aria-label="Atirador"></span>
+            <span class="hero h-iyoung">Shisamoo<span class="ico i-atirador" role="img" aria-label="Atirador"></span></span>
         </div>
 
         <div class="desc-notes">
@@ -1119,12 +1115,7 @@ Então até onde seu Herói precisa ir pra ser o monstro que nasceu pra ser?
 
         <div class="desc-hero-name">
             <span class="ico i-t" role="img" aria-label="Troca de Classe"></span>
-
-            <span class="hero h-deiat"></span>
-
-            Deia
-
-            <span class="ico i-sacerdote" role="img" aria-label="Sacerdote"></span>
+            <span class="hero h-deiat">Deia T<span class="ico i-sacerdote" role="img" aria-label="Sacerdote"></span></span>
         </div>
 
         <div class="desc-notes">
@@ -1143,18 +1134,13 @@ Então até onde seu Herói precisa ir pra ser o monstro que nasceu pra ser?
 
         <div class="desc-hero-name">
             <span class="ico i-sr" role="img" aria-label="Super Raro"></span>
-
-            <span class="hero h-ryan"></span>
-
-            Ryan
-
-            <span class="ico i-guardiao" role="img" aria-label="Guardião"></span>
+            <span class="hero h-ryan">Ryan<span class="ico i-guardiao" role="img" aria-label="Guardião"></span></span>
         </div>
 
         <div class="desc-notes">
-            → D0: morre, ressuscita, time imorrível.<br>
-            → D5: Buff, tipo, bom.<br>
-            → D10: Buff, tipo, pra quê?
+            → D0: impede o time de morrer quando tá vivo e ressucita quando morre...<br>
+            → D5: Buffs.<br>
+            → D10: Por enquanto não trava motorola... Mas é quebrado. 
         </div>
 
     </div>
@@ -1168,17 +1154,13 @@ Então até onde seu Herói precisa ir pra ser o monstro que nasceu pra ser?
 
         <div class="desc-hero-name">
             <span class="ico i-sr" role="img" aria-label="Super Raro"></span>
-
-            <span class="hero h-lass"></span>
-
-            Lass
-
-            <span class="ico i-guerreiro" role="img" aria-label="Guerreiro"></span>
+            <span class="hero h-lass">Lass<span class="ico i-guerreiro" role="img" aria-label="Guerreiro"></span></span>
         </div>
 
         <div class="desc-notes">
-            → P R E C I S A do D10...<br>
-            → Mas quando chega lá, é um monstro.
+            → Depende do D10...<br>
+            → Mas quando chega lá, é um monstro. <br>
+			→ É provável que perca prioridade pro Kyle (SR), mas é bom fazer...
         </div>
 
     </div>
@@ -1192,12 +1174,7 @@ Então até onde seu Herói precisa ir pra ser o monstro que nasceu pra ser?
 
         <div class="desc-hero-name">
             <span class="ico i-sr" role="img" aria-label="Super Raro"></span>
-
-            <span class="hero h-lupus"></span>
-
-            Lupus
-
-            <span class="ico i-atirador" role="img" aria-label="Atirador"></span>
+            <span class="hero h-lupus">Lupus<span class="ico i-atirador" role="img" aria-label="Atirador"></span></span>
         </div>
 
         <div class="desc-notes">
@@ -1215,18 +1192,12 @@ Então até onde seu Herói precisa ir pra ser o monstro que nasceu pra ser?
 
         <div class="desc-hero-name">
             <span class="ico i-t" role="img" aria-label="Troca de Classe"></span>
-
-            <span class="hero h-bastett"></span>
-
-            Bastet
-
-            <span class="ico i-atirador" role="img" aria-label="Atirador"></span>
+            <span class="hero h-bastett">Bastet T<span class="ico i-atirador" role="img" aria-label="Atirador"></span></span>
         </div>
 
         <div class="desc-notes">
-            → D3: melhor que Lupus D10, foda-se.<br>
-            → D5: útil pra praticamente tudo.<br>
-            → D10: quebrada.
+            → Power Creep no Lupus no D3.<br>
+            → D5 ela tá lá com a Iyoung e Myriel... Intocáveis.<br>
         </div>
 
     </div>
@@ -1240,18 +1211,12 @@ Então até onde seu Herói precisa ir pra ser o monstro que nasceu pra ser?
 
         <div class="desc-hero-name">
             <span class="ico i-sr" role="img" aria-label="Super Raro"></span>
-
-            <span class="hero h-amy"></span>
-
-            Amy
-
-            <span class="ico i-sacerdote" role="img" aria-label="Sacerdote"></span>
+            <span class="hero h-amy">Amy<span class="ico i-sacerdote" role="img" aria-label="Sacerdote"></span></span>
         </div>
 
         <div class="desc-notes">
-            → Bons buffs no D5.<br>
-            → D8 melhora os buffs.<br>
-            → D10 é a melhor amiga dos Magos.
+            → Ela é muito boa D5, comparável a Mayden(T)<br>
+            → D10 é um dos melhores suportes do jogo, obrigatório com magos (ou Ryan).
         </div>
 
     </div>
@@ -1265,9 +1230,11 @@ Então até onde seu Herói precisa ir pra ser o monstro que nasceu pra ser?
 
         <div class="desc-hero-name">
             <span class="ico i-s" role="img" aria-label="Herói Especial"></span>
-
-            Arme / Elesis / Lime
-
+            <span class="hero h-armes">Arme</span>
+            /
+            <span class="hero h-eles">Elesis</span>
+            /
+            <span class="hero h-limes">Lime</span>
             <span class="ico i-dps" role="img" aria-label="DPS"></span>
         </div>
 
@@ -1282,7 +1249,63 @@ Então até onde seu Herói precisa ir pra ser o monstro que nasceu pra ser?
 </div>
 
 
-<nav class="pager" aria-label="Paginação"><a href="#interacoes">« ANTERIOR</a><span class="count">[ 10 / 11 ]</span><a href="#progressao">PRÓXIMO »</a></nav>
+<nav class="pager" aria-label="Paginação"><a href="#interacoes">« ANTERIOR</a><span class="count">[ 11 / 13 ]</span><a href="#pvp">PRÓXIMO »</a></nav>
+
+</section>
+
+<section id="pvp" class="page">
+
+<header class="sec-head"><h2>⚔️ PvP <span class="emote e-fight" role="img" aria-label="Vamos lutar"></span></h2></header>
+
+<p>
+Dá pra levar o PvP numa boa também sem investir muito, e até arranhar o desafiante (Óbvio que não vamos tocar lá sem um time dedicado)...
+</p>
+
+<p>
+Se vc seguiu esse guia (oque eu espero) vc deve ter Asin, Hwarin, Dio, Metatron SI 15. E buildado um Zero e uma Rin pelo menos D10.<br>
+E isso é uma comp ruína completinha, barata e eficiente.
+</p>
+
+<p>
+Se quiser ir a fundo no PvP, priorize, nessa ordem:
+</p>
+
+<div class="block descendencia-list">
+    <div class="desc-hero">
+        <div class="desc-hero-name">
+            1º
+            <span class="ico i-t" role="img" aria-label="Troca de Classe"></span>
+            <span class="hero h-asin">Asin T</span>
+        </div>
+    </div>
+
+    <div class="desc-hero">
+        <div class="desc-hero-name">
+            2º
+            <span class="ico i-t" role="img" aria-label="Troca de Classe"></span>
+            <span class="hero h-armet">Arme T</span>
+        </div>
+    </div>
+
+    <div class="desc-hero">
+        <div class="desc-hero-name">
+            3º
+            <span class="ico i-t" role="img" aria-label="Troca de Classe"></span>
+            <span class="hero h-harpe">Harpe T</span>
+        </div>
+    </div>
+</div>
+
+<p>
+É pelo menos platina...
+</p>
+
+<figure class="research-figure">
+  <img src="img/avulsas/defesapvp.png" alt="Tela do time defensivo de PvP com 8 heróis e Poder de Batalha 2.536.539" loading="lazy">
+  <figcaption>Exemplo de time defensivo de PvP.</figcaption>
+</figure>
+
+<nav class="pager" aria-label="Paginação"><a href="#descendencia">« ANTERIOR</a><span class="count">[ 12 / 13 ]</span><a href="#progressao">PRÓXIMO »</a></nav>
 
 </section>
 
@@ -1326,7 +1349,7 @@ Essas recompensas não são infinitas.
   </div>
   <div class="credits-content">
     <div class="credits-system">Chase_OS::: GCM_DETONADO.EXE --!-- CRÉDITOS --!--</div>
-    <div class="credits-line">&gt; print f (" Based on the works of - GCDC META SPREADSHEET - Avaliable at") +<br>
+    <div class="credits-line">&gt; print f (" Based on the works of - GCDC META SPREADSHEET - Available at") +<br>
       <a href="https://docs.google.com/spreadsheets/d/1FU4RI2MMvSQkO0k4c4IxgwYhx2YFKNBIfhsXT4uC-I" target="_blank" rel="noopener noreferrer">&lt;https://docs.google.com/spreadsheets/d/1FU4RI2MMvSQkO0k4c4IxgwYhx2YFKNBIfhsXT4uC-I&gt;</a> + ("My many thanks to the amazing GCM Discord Community! And to the late LevelUP! Games.")</div>
     <div class="credits-line credits-hashtags">&gt; #Come to Brazil! ⚔(ﾟヮﾟ)⚔ &nbsp; #Come to Guilder! --- COMMAND NOT FOUND---</div>
     <div class="credits-separator" aria-hidden="true"></div>
@@ -1335,10 +1358,32 @@ Essas recompensas não são infinitas.
     <div class="credits-command">C:\GCM&gt; <span class="cursor">_</span></div>
   </div>
 </div>
-<nav class="pager" aria-label="Paginação"><a href="#descendencia">« ANTERIOR</a><span class="count">[ 11 / 11 ]</span><a href="#conceito">⟲ INÍCIO</a></nav>
+<nav class="pager" aria-label="Paginação"><a href="#pvp">« ANTERIOR</a><span class="count">[ 13 / 13 ]</span><a href="#conceito">⟲ INÍCIO</a></nav>
 
 </section>
     </main>
+      <aside class="status-panel" aria-labelledby="status-panel-title">
+      <div class="status-panel-head">
+        <h2 id="status-panel-title">🎨 Legenda</h2>
+        <span class="status-live"><span aria-hidden="true">●</span> REFERÊNCIA</span>
+      </div>
+      <div class="quick-status" aria-label="Status da conta">
+        <div><span>PERFIL</span><strong>F2P</strong></div>
+        <div><span>ESTADO</span><strong>READY</strong></div>
+        <div><span>GUIA</span><strong>01 / 13</strong></div>
+      </div>
+      <h3 class="status-panel-section">Ícones e categorias</h3>
+      <div class="legend">
+<div class="legend-row"><b>RARIDADE</b><span><span class="ico i-sr" role="img" aria-label="Super Raro"></span> Super Raro</span><span><span class="ico i-t" role="img" aria-label="Troca de Classe"></span> Troca de Classe</span><span><span class="ico i-s" role="img" aria-label="Herói Especial"></span> Herói Especial</span></div>
+<div class="legend-row"><b>ATRIBUTO</b><span><span class="ico i-verde" role="img" aria-label="Verde"></span> Verde</span><span><span class="ico i-azul" role="img" aria-label="Azul"></span> Azul</span><span><span class="ico i-vermelho" role="img" aria-label="Vermelho"></span> Vermelho</span></div>
+<div class="legend-row"><b>FUNÇÃO</b><span><span class="ico i-guardiao" role="img" aria-label="Guardião"></span> Guardião</span><span><span class="ico i-guerreiro" role="img" aria-label="Guerreiro"></span> Guerreiro</span><span><span class="ico i-dps" role="img" aria-label="DPS"></span> DPS</span><span><span class="ico i-sacerdote" role="img" aria-label="Sacerdote"></span> Sacerdote</span></div>
+<div class="legend-row"><b>DANO</b><span><span class="ico i-mago" role="img" aria-label="Mago"></span> Mago</span><span><span class="ico i-atirador" role="img" aria-label="Atirador"></span> Atirador</span></div>
+<div class="legend-row"><b>ECONOMIA</b><span>💰 Custo</span><span>🪙 Ouro</span><span><img class="asset-icon" src="img/materiais/cubos.png" alt="" aria-hidden="true"> Cubos</span><span><img class="asset-icon" src="img/materiais/essencia.png" alt="" aria-hidden="true"> Essências</span><span><img class="asset-icon" src="img/materiais/cristal.png" alt="" aria-hidden="true"> Cristais</span><span><img class="asset-icon" src="img/materiais/gemaazul.png" alt="" aria-hidden="true"> Gema Azul</span><span>⚡ Energia</span><span>🎟️ Bilhetes</span><span>🛠️ Materiais</span><span><img class="asset-icon" src="img/materiais/overdiumrock.png" alt="" aria-hidden="true"> Overdium</span><span><img class="asset-icon" src="img/materiais/coragem.png" alt="" aria-hidden="true"> Coragem</span><span><img class="asset-icon" src="img/materiais/bensadeusa.png" alt="" aria-hidden="true"> Graças da Deusa</span><span>💲Recompensas</span></div>
+<div class="legend-row"><b>ESCALADA</b><span>⬆️ Aumentar</span><span>⬇️ Reduzir</span><span>🆙 Upgrade</span><span>🔓 Desbloqueio</span><span>🔒 Bloqueio</span><span>❤️‍🔥 Selo da Alma</span><span>🎯 Objetivo</span><span>⏱️ Tempo necessário</span></div>
+<div class="legend-row"><b>CONTEÚDO</b><span><img class="asset-icon" src="img/content/wb.png" alt="" aria-hidden="true"> World Boss</span><span><img class="asset-icon" src="img/content/raid.png" alt="" aria-hidden="true"> Raid</span><span><img class="asset-icon" src="img/content/mercuria.png" alt="" aria-hidden="true"> Mar da Eternidade</span><span><img class="asset-icon" src="img/content/ernasis.png" alt="" aria-hidden="true"> Martelo</span><span><img class="asset-icon" src="img/content/vulcanus.png" alt="" aria-hidden="true"> Fornalha</span><span><img class="asset-icon" src="img/content/torredesafios.png" alt="" aria-hidden="true"> Torre dos Desafios</span><span><img class="asset-icon" src="img/content/torreherois.png" alt="" aria-hidden="true"> Torre dos Heróis</span><span><img class="asset-icon" src="img/content/guildboss.png" alt="" aria-hidden="true"> Chefe de Guilda</span><span><img class="asset-icon" src="img/content/altar.png" alt="" aria-hidden="true"> Altar</span><span><img class="asset-icon" src="img/content/berkas.png" alt="" aria-hidden="true"> Ninho</span><span><img class="asset-icon" src="img/content/labirinto.png" alt="" aria-hidden="true"> Labirinto</span><span><img class="asset-icon" src="img/content/exterminio.png" alt="" aria-hidden="true"> Extermínio</span><span><img class="asset-icon" src="img/content/nucleo.png" alt="" aria-hidden="true"> Núcleo Final</span></div>
+<div class="legend-row"><b>PERFORMANCE</b><span>🏆 Score</span><span>💥 Dano</span><span>🛡️ Sobrevivência</span><span>🩸 Sustain</span><span>🪽 Velocidade</span><span>⚡ Battle Power</span><span>⌛ Tempo</span><span>🎯 Meta</span><span>📉 Perda</span><span>📈 Ganho</span></div>
+<div class="legend-row"><b>PRIORIDADE</b><span>⭐⭐⭐⭐⭐ máxima</span><span>⭐⭐⭐⭐ alta</span><span>⭐⭐⭐ média</span><span>⭐⭐ baixa</span><span>⭐ mínima</span></div>
+</div>    </aside>
   </div>
 </div>
 
@@ -1397,20 +1442,20 @@ Essas recompensas não são infinitas.
                         <th scope="col">Stat</th>
                         <th scope="col">Stat</th>
                         <th scope="col">Stat</th>
-                        <th scope="col" class="sub-1">Substat</th>
-                        <th scope="col" class="sub-2">Substat</th>
-                        <th scope="col" class="sub-3">Substat</th>
+                        <th scope="col" class="sub-1"><img class="substat-icon" src="img/materiais/substat1.png" alt="Substat 1"></th>
+                        <th scope="col" class="sub-2"><img class="substat-icon" src="img/materiais/substat2.png" alt="Substat 2"></th>
+                        <th scope="col" class="sub-3"><img class="substat-icon" src="img/materiais/substat3.png" alt="Substat 3"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="2">Azul + Vermelho</td>
+                        <th scope="row" rowspan="2">Azul + Vermelho</th>
                         <td>HP</td>
                         <td>HP</td>
                         <td>HP</td>
                         <td>HP</td>
                         <td>HP</td>
-                        <td rowspan="2">HP<br><!-- Substat B antigo (Skill DMG) ficou sem coluna --></td>
+                        <td rowspan="2">HP</td>
                         <td rowspan="2">Skill CD</td>
                         <td rowspan="2">Skill DMG</td>
                     </tr>
@@ -1443,20 +1488,20 @@ Essas recompensas não são infinitas.
                         <th scope="col">Stat</th>
                         <th scope="col">Stat</th>
                         <th scope="col">Stat</th>
-                        <th scope="col" class="sub-1">Substat</th>
-                        <th scope="col" class="sub-2">Substat</th>
-                        <th scope="col" class="sub-3">Substat</th>
+                        <th scope="col" class="sub-1"><img class="substat-icon" src="img/materiais/substat1.png" alt="Substat 1"></th>
+                        <th scope="col" class="sub-2"><img class="substat-icon" src="img/materiais/substat2.png" alt="Substat 2"></th>
+                        <th scope="col" class="sub-3"><img class="substat-icon" src="img/materiais/substat3.png" alt="Substat 3"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="2">Verde</td>
+                        <th scope="row" rowspan="2">Verde</th>
                         <td>Físico</td>
                         <td>Físico</td>
                         <td>Físico</td>
                         <td>Físico</td>
                         <td>Físico</td>
-                        <td rowspan="2">Físico<br></td>
+                        <td rowspan="2">Físico</td>
                         <td rowspan="2">Skill CD</td>
                         <td rowspan="2">Basic DMG</td>
                     </tr>
@@ -1489,20 +1534,20 @@ Essas recompensas não são infinitas.
                         <th scope="col">Stat</th>
                         <th scope="col">Stat</th>
                         <th scope="col">Stat</th>
-                        <th scope="col" class="sub-1">Substat</th>
-                        <th scope="col" class="sub-2">Substat</th>
-                        <th scope="col" class="sub-3">Substat</th>
+                        <th scope="col" class="sub-1"><img class="substat-icon" src="img/materiais/substat1.png" alt="Substat 1"></th>
+                        <th scope="col" class="sub-2"><img class="substat-icon" src="img/materiais/substat2.png" alt="Substat 2"></th>
+                        <th scope="col" class="sub-3"><img class="substat-icon" src="img/materiais/substat3.png" alt="Substat 3"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="2">Verde</td>
+                        <th scope="row" rowspan="2">Verde</th>
                         <td>Mágico</td>
                         <td>Mágico</td>
                         <td>Mágico</td>
                         <td>Mágico</td>
                         <td>Mágico</td>
-                        <td rowspan="2">Mágico<br></td>
+                        <td rowspan="2">Mágico</td>
                         <td rowspan="2">Skill CD</td>
                         <td rowspan="2">Skill DMG</td>
                     </tr>
@@ -1535,20 +1580,20 @@ Essas recompensas não são infinitas.
                         <th scope="col">Stat</th>
                         <th scope="col">Stat</th>
                         <th scope="col">Stat</th>
-                        <th scope="col" class="sub-1">Substat</th>
-                        <th scope="col" class="sub-2">Substat</th>
-                        <th scope="col" class="sub-3">Substat</th>
+                        <th scope="col" class="sub-1"><img class="substat-icon" src="img/materiais/substat1.png" alt="Substat 1"></th>
+                        <th scope="col" class="sub-2"><img class="substat-icon" src="img/materiais/substat2.png" alt="Substat 2"></th>
+                        <th scope="col" class="sub-3"><img class="substat-icon" src="img/materiais/substat3.png" alt="Substat 3"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="2">Azul + Vermelho</td>
+                        <th scope="row" rowspan="2">Azul + Vermelho</th>
                         <td>HP</td>
                         <td>HP</td>
                         <td>HP</td>
                         <td>HP</td>
                         <td>HP</td>
-                        <td rowspan="2">HP<br><!-- Substat B antigo (Skill DMG) ficou sem coluna --></td>
+                        <td rowspan="2">HP</td>
                         <td rowspan="2">Skill CD<br>+<br>Special CD</td>
                         <td rowspan="2">Skill DMG</td>
                     </tr>
@@ -1581,20 +1626,20 @@ Essas recompensas não são infinitas.
                         <th scope="col">Stat</th>
                         <th scope="col">Stat</th>
                         <th scope="col">Stat</th>
-                        <th scope="col" class="sub-1">Substat</th>
-                        <th scope="col" class="sub-2">Substat</th>
-                        <th scope="col" class="sub-3">Substat</th>
+                        <th scope="col" class="sub-1"><img class="substat-icon" src="img/materiais/substat1.png" alt="Substat 1"></th>
+                        <th scope="col" class="sub-2"><img class="substat-icon" src="img/materiais/substat2.png" alt="Substat 2"></th>
+                        <th scope="col" class="sub-3"><img class="substat-icon" src="img/materiais/substat3.png" alt="Substat 3"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="2">Vermelho</td>
+                        <th scope="row" rowspan="2">Vermelho</th>
                         <td>HP</td>
                         <td>HP</td>
                         <td>HP</td>
                         <td>HP</td>
                         <td>HP</td>
-                        <td rowspan="2">HP<br></td>
+                        <td rowspan="2">HP</td>
                         <td rowspan="2">Skill CD</td>
                         <td rowspan="2">DMG Reduction</td>
                     </tr>
@@ -1638,7 +1683,7 @@ Essas recompensas não são infinitas.
   <div class="priority-content">
 
     <section class="priority-section priority-warning">
-      
+      <div class="priority-section-kicker">01 · CONVOCAÇÃO</div>
       <h3>GRANDCHASE! ASSEMBLE! (CONVOCAÇÃO)</h3>
       <p class="priority-lead">Antes de qualquer coisa, sim, essas são as escolhas certas e eu não tirei isso da minha cabeça.</p>
 
@@ -1646,7 +1691,7 @@ Essas recompensas não são infinitas.
         <span class="hero h-io">IO</span><span class="hero h-cindy">CINDY</span><span class="hero h-rey">REY</span><span class="hero h-urara">URARA</span><span class="hero h-asin">ASIN</span>
       </div></div>
       <div class="priority-tier tier-2"><div class="tier-label"><span>NÍVEL 2</span></div><div class="hero-grid">
-</span><span class="hero"> TANTO FAZ </span></span><span class="hero h-harpe"> NOIR </span><span class="hero h-hwarin">HWARIN</span><span class="hero h-neption">NEPTION / EDEL</span><span class="hero h-ganymedes">GANYMEDES</span>
+<span class="hero">TANTO FAZ</span><span class="hero h-harpe"> NOIR </span><span class="hero h-hwarin">HWARIN</span><span class="hero h-neption">NEPTION / EDEL</span><span class="hero h-ganymedes">GANYMEDES</span>
       </div></div>
       <div class="priority-tier tier-3"><div class="tier-label"><span>NÍVEL 3</span></div><div class="hero-grid">
         <span class="hero h-bram">BRAM</span><span class="hero h-lire">LIRE</span><span class="hero h-myst">MYST</span><span class="hero h-ragna">RAGNA</span><span class="hero h-limes">LIMES</span>
@@ -2132,7 +2177,8 @@ Essas recompensas não são infinitas.
 
   function updateBackTop() {
     if (!backTop) return;
-    backTop.classList.toggle("is-visible", window.scrollY > 260);
+    const mainScroll = main ? main.scrollTop : 0;
+    backTop.classList.toggle("is-visible", Math.max(window.scrollY, mainScroll) > 260);
   }
 
   const main = document.getElementById("conteudo-principal");
@@ -2180,13 +2226,21 @@ Essas recompensas não são infinitas.
       const appWindow = document.querySelector(".window");
       const anyModalOpen = modalToggles.some(function (item) { return item && item.checked; });
       if (appWindow) appWindow.inert = anyModalOpen;
+      const openNow = modalToggles.find(function (item) { return item && item.checked; });
+      if (openNow) document.body.dataset.modal = openNow.id; else delete document.body.dataset.modal;
       if (toggle.checked) {
         const close = dialog && dialog.querySelector(".map-close");
         if (close) close.focus();
         else if (dialog) dialog.focus();
       } else if (!modalToggles.some(function (item) { return item && item.checked; })) {
         const opener = modalOpeners.get(toggle);
-        if (opener && opener.isConnected) opener.focus();
+        if (opener && opener.isConnected) {
+          opener.focus();
+          if (document.activeElement !== opener) {
+            const fallback = menuButton && menuButton.offsetParent !== null ? menuButton : main;
+            if (fallback) fallback.focus({ preventScroll: true });
+          }
+        }
       }
     });
   });
@@ -2195,8 +2249,8 @@ Essas recompensas não são infinitas.
     const link = event.target instanceof Element ? event.target.closest('a[href="#conteudo-principal"]') : null;
     if (link) {
       event.preventDefault();
-      if (link.classList.contains("back-top")) window.scrollTo({ top: 0 });
-      else if (main) { main.scrollIntoView(); main.focus({ preventScroll: true }); }
+      if (link.classList.contains("back-top")) { window.scrollTo({ top: 0 }); if (main) main.scrollTo({ top: 0 }); }
+      else if (main) { main.scrollTo({ top: 0 }); main.scrollIntoView(); main.focus({ preventScroll: true }); }
       return;
     }
     if (menuToggle && event.target instanceof Element && event.target.closest('.menu a[href^="#"]')) {
@@ -2239,10 +2293,23 @@ Essas recompensas não são infinitas.
     }
   });
 
+  const guideSections = Array.from(document.querySelectorAll("main section.page"));
+  const guideCounter = document.querySelector(".quick-status > div:last-child strong");
+  function updateGuideCounter() {
+    if (!guideCounter || !guideSections.length) return;
+    const id = decodeURIComponent(location.hash.slice(1));
+    const idx = guideSections.findIndex(function (s) { return s.id === id; });
+    if (idx < 0 && id) return;
+    guideCounter.textContent = String(Math.max(idx, 0) + 1).padStart(2, "0") + " / " + String(guideSections.length).padStart(2, "0");
+  }
+  window.addEventListener("hashchange", updateGuideCounter);
+  updateGuideCounter();
+
   updateClock();
   updateBackTop();
   setInterval(updateClock, 15000);
   window.addEventListener("scroll", updateBackTop, { passive: true });
+  if (main) main.addEventListener("scroll", updateBackTop, { passive: true });
 })();
 </script>
 
