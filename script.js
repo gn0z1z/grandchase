@@ -1,8 +1,8 @@
 document.documentElement.classList.add('js');
 
 /* =========================================================
- C hips gerados a partir de data*-split
- ========================================================= */
+   Chips gerados a partir de data-split
+   ========================================================= */
 document.querySelectorAll('[data-split]').forEach(function (el) {
     el.dataset.split.split(', ').forEach(function (name) {
         var span = document.createElement('span');
@@ -12,8 +12,8 @@ document.querySelectorAll('[data-split]').forEach(function (el) {
 });
 
 /* =========================================================
- N avegação                     *
- ========================================================= */
+   Navegação
+   ========================================================= */
 const ids = ['glossario', 'times', 'recursos', 'evolucao', 'selos', 'modos'];
 
 function show() {
@@ -25,36 +25,36 @@ function show() {
         if (el) el.classList.toggle('on', id === h);
     });
 
-        let activeTab = null;
-        document.querySelectorAll('.nav a').forEach(function (a) {
-            const on = a.getAttribute('href') === '#' + h;
-            a.setAttribute('aria-current', on ? 'true' : 'false');
-            if (on) activeTab = a;
-        });
+    let activeTab = null;
+    document.querySelectorAll('.nav a').forEach(function (a) {
+        const on = a.getAttribute('href') === '#' + h;
+        a.setAttribute('aria-current', on ? 'true' : 'false');
+        if (on) activeTab = a;
+    });
 
-            if (activeTab && window.innerWidth < 1100) {
-                const nav = document.querySelector('.nav');
-                if (nav) {
-                    const scrollLeft = activeTab.offsetLeft - nav.offsetWidth / 2 + activeTab.offsetWidth / 2;
-                    nav.scrollTo({ left: scrollLeft, behavior: 'smooth' });
-                }
-            }
+    if (activeTab && window.innerWidth < 1100) {
+        const nav = document.querySelector('.nav');
+        if (nav) {
+            const scrollLeft = activeTab.offsetLeft - nav.offsetWidth / 2 + activeTab.offsetWidth / 2;
+            nav.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+        }
+    }
 
-            window.scrollTo({ top: 0, behavior: 'auto' });
+    window.scrollTo({ top: 0, behavior: 'auto' });
 
-            // Atualiza o Bento Grid após a troca de aba.
-            // O setTimeout garante que o navegador renderizou o display:block antes de medir
-            if (typeof updateBentoGrid === 'function') {
-                setTimeout(updateBentoGrid, 50);
-            }
+    // Atualiza o Bento Grid após a troca de aba.
+    // O setTimeout garante que o navegador renderizou o display:block antes de medir
+    if (typeof updateBentoGrid === 'function') {
+        setTimeout(updateBentoGrid, 50);
+    }
 }
 
 window.addEventListener('hashchange', show);
 show();
 
 /* =========================================================
- T eam Builder                  *
- ========================================================= */
+   Team Builder
+   ========================================================= */
 const heroesDB = [
     // VERMELHO
     { id: 'calisto_t', nome: 'CALISTO (T)', attr: 'vermelho', classe: 'tank' },
@@ -86,38 +86,38 @@ const heroesDB = [
     { id: 'mayden_t', nome: 'MAYDEN (T)', attr: 'azul', classe: 'healer' },
     { id: 'amy', nome: 'AMY D5', attr: 'azul', classe: 'healer' },
 
-// VERDE
-{ id: 'tia', nome: 'TIA (SR)', attr: 'verde', classe: 'tank' },
-{ id: 'ai_t', nome: 'AI (T)', attr: 'verde', classe: 'tank' },
-{ id: 'sieg_t', nome: 'SIEG (T)', attr: 'verde', classe: 'tank' },
-{ id: 'elesis', nome: 'ELESIS (SR)', attr: 'verde', classe: 'assault' },
-{ id: 'vanessa', nome: 'VANESSA (SR)', attr: 'verde', classe: 'assault' },
-{ id: 'brahmashell', nome: 'BRAHMASHELL (SR)', attr: 'verde', classe: 'assault' },
-{ id: 'lire', nome: 'LIRE (SR)', attr: 'verde', classe: 'ranger' },
-{ id: 'shisamoo', nome: 'SHISAMOO (SR)', attr: 'verde', classe: 'ranger' },
-{ id: 'lire_s', nome: 'LIRE (S)', attr: 'verde', classe: 'ranger' },
-{ id: 'lapis', nome: 'LAPIS (SR)', attr: 'verde', classe: 'ranger' },
-{ id: 'mari', nome: 'MARI (SR) D10', attr: 'verde', classe: 'mage' },
-{ id: 'grandiel_t', nome: 'GRANDIEL (T)', attr: 'verde', classe: 'mage' },
-{ id: 'myst_t', nome: 'MYST (T)', attr: 'verde', classe: 'mage' },
-{ id: 'agnecia', nome: 'AGNECIA (SR)', attr: 'verde', classe: 'mage' },
-{ id: 'rey', nome: 'REY (SR)', attr: 'verde', classe: 'mage' },
-{ id: 'deia_t', nome: 'DEIA (T)', attr: 'verde', classe: 'healer' },
-{ id: 'urara', nome: 'URARA (SR)', attr: 'verde', classe: 'healer' },
-{ id: 'rey_t', nome: 'REY (T)', attr: 'verde', classe: 'healer' }
+    // VERDE
+    { id: 'tia', nome: 'TIA (SR)', attr: 'verde', classe: 'tank' },
+    { id: 'ai_t', nome: 'AI (T)', attr: 'verde', classe: 'tank' },
+    { id: 'sieg_t', nome: 'SIEG (T)', attr: 'verde', classe: 'tank' },
+    { id: 'elesis', nome: 'ELESIS (SR)', attr: 'verde', classe: 'assault' },
+    { id: 'vanessa', nome: 'VANESSA (SR)', attr: 'verde', classe: 'assault' },
+    { id: 'brahmashell', nome: 'BRAHMASHELL (SR)', attr: 'verde', classe: 'assault' },
+    { id: 'lire', nome: 'LIRE (SR)', attr: 'verde', classe: 'ranger' },
+    { id: 'shisamoo', nome: 'SHISAMOO (SR)', attr: 'verde', classe: 'ranger' },
+    { id: 'lire_s', nome: 'LIRE (S)', attr: 'verde', classe: 'ranger' },
+    { id: 'lapis', nome: 'LAPIS (SR)', attr: 'verde', classe: 'ranger' },
+    { id: 'mari', nome: 'MARI (SR) D10', attr: 'verde', classe: 'mage' },
+    { id: 'grandiel_t', nome: 'GRANDIEL (T)', attr: 'verde', classe: 'mage' },
+    { id: 'myst_t', nome: 'MYST (T)', attr: 'verde', classe: 'mage' },
+    { id: 'agnecia', nome: 'AGNECIA (SR)', attr: 'verde', classe: 'mage' },
+    { id: 'rey', nome: 'REY (SR)', attr: 'verde', classe: 'mage' },
+    { id: 'deia_t', nome: 'DEIA (T)', attr: 'verde', classe: 'healer' },
+    { id: 'urara', nome: 'URARA (SR)', attr: 'verde', classe: 'healer' },
+    { id: 'rey_t', nome: 'REY (T)', attr: 'verde', classe: 'healer' }
 ];
 
 const ATRIBUTOS = [
     { id: 'vermelho', ico: 'imgs/vermelho.webp', nome: 'Vermelho' },
-{ id: 'verde', ico: 'imgs/verde.webp', nome: 'Verde' },
-{ id: 'azul', ico: 'imgs/azul.webp', nome: 'Azul' }
+    { id: 'verde', ico: 'imgs/verde.webp', nome: 'Verde' },
+    { id: 'azul', ico: 'imgs/azul.webp', nome: 'Azul' }
 ];
 
 const CLASSES = [
     { id: 'tank', ico: 'imgs/tank.webp', nome: 'Guardião' },
-{ id: 'assault', ico: 'imgs/assault.webp', nome: 'Guerreiro' },
-{ id: 'dps', ico: 'imgs/ranger.webp', nome: 'DPS' },
-{ id: 'healer', ico: 'imgs/healer.webp', nome: 'Sacerdote' }
+    { id: 'assault', ico: 'imgs/assault.webp', nome: 'Guerreiro' },
+    { id: 'dps', ico: 'imgs/ranger.webp', nome: 'DPS' },
+    { id: 'healer', ico: 'imgs/healer.webp', nome: 'Sacerdote' }
 ];
 
 let tbSelectedSlot = null;
@@ -276,8 +276,8 @@ const clearBtn = document.getElementById('tb-clear-btn');
 if (clearBtn) clearBtn.addEventListener('click', clearTeam);
 
 /* =========================================================
- C arrossel de selos            *
- ========================================================= */
+   Carrossel de selos
+   ========================================================= */
 (function initCarousel() {
     const track = document.getElementById('selos-track');
     const prevBtn = document.getElementById('btn-prev');
@@ -313,8 +313,8 @@ if (clearBtn) clearBtn.addEventListener('click', clearTeam);
 })();
 
 /* =========================================================
- F REE-FLOW ORPHAN DETECTOR (Ben*to Grid Banner)
- ========================================================= */
+   FREE-FLOW ORPHAN DETECTOR (Bento Grid Banner)
+   ========================================================= */
 let isBentoUpdating = false;
 
 function updateBentoGrid() {
@@ -328,7 +328,7 @@ function updateBentoGrid() {
             if (cards.length < 2) return;
 
             const gridCols = window.getComputedStyle(grid).gridTemplateColumns.split(' ').length;
-            if (gridCols === 1) { isBentoUpdating = false; return; }
+            if (gridCols === 1) { isBentoUpdating = false; return; } // Mobile não faz nada
 
             // 2. Limpa as classes antes de medir para pegar o tamanho real
             cards.forEach(card => {
