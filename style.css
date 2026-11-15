@@ -7,6 +7,7 @@
     --pal-3: #76D7C4;
     --pal-4: #5D6D7E;
     --pal-5: #34495E;
+    --pal-6: #0088BB;
 
     --md-surface:                  var(--pal-1);
     --md-surface-container-low:    color-mix(in srgb, var(--pal-1) 70%, var(--pal-2) 30%);
@@ -434,8 +435,8 @@ li.yes { font-weight: 500; }
 .tb-pool { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px; background: var(--md-surface-container-low); border: 1px solid var(--md-outline-variant); border-radius: var(--shape-m); min-height: 90px; align-content: flex-start; }
 .tb-pill { display: inline-flex; align-items: center; justify-content: center; gap: 4px; padding: 4px 10px; border-radius: var(--shape-s); font-size: 12px; font-weight: 700; cursor: pointer; border: 2px solid transparent; user-select: none; transition: all var(--dur) var(--ease); overflow-wrap: anywhere; max-width: 100%; }
 .tb-pill.attr-vermelho { background: var(--md-error-container); color: var(--md-on-error-container); }
-.tb-pill.attr-verde    { background: var(--pal-2); color: var(--pal-5); }
-.tb-pill.attr-azul     { background: color-mix(in srgb, var(--pal-3) 30%, var(--md-surface-container-highest) 70%); color: var(--pal-5); }
+.tb-pill.attr-verde    { background: var(--pal-3); color: var(--pal-5); }
+.tb-pill.attr-azul     { background:  var(--pal-6); color: var(--pal-2); }
 
 .tb-pill.disabled { opacity: .35; cursor: not-allowed; filter: grayscale(1); }
 .tb-pill.used { opacity: .30; cursor: not-allowed; text-decoration: line-through; }
@@ -529,4 +530,217 @@ footer { margin-top: 28px; text-align: center; color: var(--md-on-surface-varian
     .tb-board { grid-template-columns: 32px repeat(4, minmax(0, 1fr)); padding: 6px; gap: 3px; }
     .term { grid-template-columns: 78px 1fr; gap: 8px; }
     .hero-logo { width: 48px; height: 48px; }
+}
+
+/* ==========================================================================
+ *  Tabela de Equipamentos (Evolução) - Padronizada e Acessível
+ * ========================================================================== */
+.eq-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.eq-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.eq-tabs button {
+    background: var(--md-surface-container-highest);
+    color: var(--md-on-surface);
+    border: 1px solid var(--md-outline-variant);
+    padding: 6px 14px;
+    border-radius: var(--shape-pill);
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all var(--dur) var(--ease);
+}
+
+.eq-tabs button:hover {
+    background: var(--md-surface-container-high);
+}
+
+.eq-tabs button.active {
+    background: var(--md-primary);
+    color: var(--md-on-primary);
+    border-color: var(--md-primary);
+}
+
+.eq-tabs button:focus-visible,
+#eq-pvp-toggle:focus-visible {
+outline: 3px solid var(--md-secondary);
+outline-offset: 2px;
+}
+
+#eq-pvp-toggle.pvp-on {
+background: var(--md-error-container);
+color: var(--md-on-error-container);
+border-color: var(--md-on-error-container);
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: var(--shape-m);
+    border: 1px solid var(--md-outline-variant);
+    margin-top: 8px;
+}
+
+.eq-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* TRAVA AS LARGURAS DAS COLUNAS */
+    text-align: center;
+    background: var(--md-surface-container-low);
+    font-size: 13px;
+    min-width: 600px;
+}
+
+/* Larguras fixas para cada coluna */
+.eq-table th:nth-child(1),
+.eq-table td:nth-child(1) { width: 20%; }
+
+.eq-table th:nth-child(2),
+.eq-table td:nth-child(2) { width: 16%; }
+
+.eq-table th:nth-child(3),
+.eq-table td:nth-child(3) { width: 16%; }
+
+.eq-table th:nth-child(4),
+.eq-table td:nth-child(4) { width: 16%; }
+
+.eq-table th:nth-child(5),
+.eq-table td:nth-child(5) { width: 16%; }
+
+.eq-table th:nth-child(6),
+.eq-table td:nth-child(6) { width: 16%; }
+
+.eq-table th,
+.eq-table td {
+    border: 1px solid var(--md-outline-variant);
+    padding: 10px 8px;
+    height: 64px; /* Altura mínima consistente */
+    vertical-align: middle;
+    word-break: break-word; /* Quebra palavras longas */
+    hyphens: auto; /* Hifenização automática */
+    overflow-wrap: anywhere;
+}
+
+.eq-table th {
+    background: var(--md-surface-container-high);
+    color: var(--md-on-surface);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+.eq-table td:first-child {
+    font-weight: 600;
+    background: var(--md-surface-container);
+    text-align: left;
+    padding-left: 12px;
+    white-space: nowrap; /* "Equipamento", "Linha 1" e "Encantamento" não quebram */
+}
+
+/* Fundo levemente diferente para a linha de encantamento */
+.eq-table tr:last-child td {
+    background: color-mix(in srgb, var(--md-surface-container-low) 85%, var(--md-primary) 15%);
+}
+
+/* Destaque para o modo PvP ativo na tabela */
+.eq-table.pvp-active th {
+    background: var(--md-error-container);
+    color: var(--md-on-error-container);
+}
+
+/* Transição suave de opacidade no conteúdo (evita "piscar" brusco) */
+#eq-table-body {
+transition: opacity 150ms ease;
+}
+
+#eq-table-body.is-updating {
+opacity: 0.5;
+}
+
+
+
+
+  /* =========================================================
+   * Cores Específicas da Tabela de Equipamentos
+   * ========================================================= */
+
+  /* 1. Sub-arma: Sempre transparente/branca */
+  .eq-table td.cell-subarma {
+      background-color: transparent !important;
+      color: var(--md-on-surface) !important;
+  }
+
+  /* =========================================================
+   * MODO PVE
+   * ========================================================= */
+
+  /* PVE DPS (Atirador, Mago) - Amarelo/Verde */
+  .eq-table:not(.pvp-active)[data-current-class="atirador"] td.cell-arma,
+  .eq-table:not(.pvp-active)[data-current-class="mago"] td.cell-arma,
+  .eq-table:not(.pvp-active)[data-current-class="atirador"] td.cell-armadura,
+  .eq-table:not(.pvp-active)[data-current-class="mago"] td.cell-armadura,
+  .eq-table:not(.pvp-active)[data-current-class="atirador"] td.cell-subarmadura,
+  .eq-table:not(.pvp-active)[data-current-class="mago"] td.cell-subarmadura {
+      background-color: #8A9A5B !important; /* Verde oliva escuro */
+      color: #FFFFFF !important; /* mudado, para leitura menos cansativa...*/
+  }
+
+  /* PVE Apoio (Guardião, Guerreiro, Suporte) - Arma e Armadura Vermelho */
+  .eq-table:not(.pvp-active)[data-current-class="guardiao"] td.cell-arma,
+  .eq-table:not(.pvp-active)[data-current-class="guerreiro"] td.cell-arma,
+  .eq-table:not(.pvp-active)[data-current-class="suporte"] td.cell-arma,
+  .eq-table:not(.pvp-active)[data-current-class="guardiao"] td.cell-armadura,
+  .eq-table:not(.pvp-active)[data-current-class="guerreiro"] td.cell-armadura,
+  .eq-table:not(.pvp-active)[data-current-class="suporte"] td.cell-armadura {
+      background-color: #FF9F9F !important;
+      color: #410E0B !important;
+  }
+
+  /* PVE Apoio (Guardião, Guerreiro, Suporte) - Subarmaduras Azul */
+  .eq-table:not(.pvp-active)[data-current-class="guardiao"] td.cell-subarmadura,
+  .eq-table:not(.pvp-active)[data-current-class="guerreiro"] td.cell-subarmadura,
+  .eq-table:not(.pvp-active)[data-current-class="suporte"] td.cell-subarmadura {
+      background-color: #82AFD5 !important;
+      color: #1B4F72 !important;
+  }
+
+  /* =========================================================
+   * MODO PVP
+   * ========================================================= */
+
+  /* PVP Apoio (Guardião, Guerreiro, Suporte) - Tudo Vermelho */
+  .eq-table.pvp-active[data-current-class="guardiao"] td.cell-arma,
+.eq-table.pvp-active[data-current-class="guerreiro"] td.cell-arma,
+.eq-table.pvp-active[data-current-class="suporte"] td.cell-arma,
+.eq-table.pvp-active[data-current-class="guardiao"] td.cell-armadura,
+.eq-table.pvp-active[data-current-class="guerreiro"] td.cell-armadura,
+.eq-table.pvp-active[data-current-class="suporte"] td.cell-armadura,
+.eq-table.pvp-active[data-current-class="guardiao"] td.cell-subarmadura,
+.eq-table.pvp-active[data-current-class="guerreiro"] td.cell-subarmadura,
+.eq-table.pvp-active[data-current-class="suporte"] td.cell-subarmadura {
+    background-color: #FF9F9F !important;
+    color: #410E0B !important;
+}
+
+/* PVP DPS (Atirador, Mago) - Tudo Roxo */
+.eq-table.pvp-active[data-current-class="atirador"] td.cell-arma,
+.eq-table.pvp-active[data-current-class="mago"] td.cell-arma,
+.eq-table.pvp-active[data-current-class="atirador"] td.cell-armadura,
+.eq-table.pvp-active[data-current-class="mago"] td.cell-armadura,
+.eq-table.pvp-active[data-current-class="atirador"] td.cell-subarmadura,
+.eq-table.pvp-active[data-current-class="mago"] td.cell-subarmadura {
+    background-color: #B483A4 !important;
+    color: #FFFFFF !important;
 }
