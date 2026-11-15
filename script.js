@@ -1,8 +1,8 @@
 document.documentElement.classList.add('js');
 
 /* =========================================================
-   Chips gerados a partir de data-split
-   ========================================================= */
+ C hips gerados a partir de data*-split
+ ========================================================= */
 document.querySelectorAll('[data-split]').forEach(function (el) {
     el.dataset.split.split(', ').forEach(function (name) {
         var span = document.createElement('span');
@@ -12,8 +12,8 @@ document.querySelectorAll('[data-split]').forEach(function (el) {
 });
 
 /* =========================================================
-   Navegação
-   ========================================================= */
+ N avegação                     *
+ ========================================================= */
 const ids = ['glossario', 'times', 'recursos', 'evolucao', 'selos', 'modos'];
 
 function show() {
@@ -25,36 +25,36 @@ function show() {
         if (el) el.classList.toggle('on', id === h);
     });
 
-    let activeTab = null;
-    document.querySelectorAll('.nav a').forEach(function (a) {
-        const on = a.getAttribute('href') === '#' + h;
-        a.setAttribute('aria-current', on ? 'true' : 'false');
-        if (on) activeTab = a;
-    });
+        let activeTab = null;
+        document.querySelectorAll('.nav a').forEach(function (a) {
+            const on = a.getAttribute('href') === '#' + h;
+            a.setAttribute('aria-current', on ? 'true' : 'false');
+            if (on) activeTab = a;
+        });
 
-    if (activeTab && window.innerWidth < 1100) {
-        const nav = document.querySelector('.nav');
-        if (nav) {
-            const scrollLeft = activeTab.offsetLeft - nav.offsetWidth / 2 + activeTab.offsetWidth / 2;
-            nav.scrollTo({ left: scrollLeft, behavior: 'smooth' });
-        }
-    }
+            if (activeTab && window.innerWidth < 1100) {
+                const nav = document.querySelector('.nav');
+                if (nav) {
+                    const scrollLeft = activeTab.offsetLeft - nav.offsetWidth / 2 + activeTab.offsetWidth / 2;
+                    nav.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+                }
+            }
 
-    window.scrollTo({ top: 0, behavior: 'auto' });
+            window.scrollTo({ top: 0, behavior: 'auto' });
 
-    // Atualiza o Bento Grid após a troca de aba.
-    // O setTimeout garante que o navegador renderizou o display:block antes de medir
-    if (typeof updateBentoGrid === 'function') {
-        setTimeout(updateBentoGrid, 50);
-    }
+            // Atualiza o Bento Grid após a troca de aba.
+            // O setTimeout garante que o navegador renderizou o display:block antes de medir
+            if (typeof updateBentoGrid === 'function') {
+                setTimeout(updateBentoGrid, 50);
+            }
 }
 
 window.addEventListener('hashchange', show);
 show();
 
 /* =========================================================
-   Team Builder
-   ========================================================= */
+ T eam Builder                  *
+ ========================================================= */
 const heroesDB = [
     // VERMELHO
     { id: 'calisto_t', nome: 'CALISTO (T)', attr: 'vermelho', classe: 'tank' },
@@ -86,38 +86,38 @@ const heroesDB = [
     { id: 'mayden_t', nome: 'MAYDEN (T)', attr: 'azul', classe: 'healer' },
     { id: 'amy', nome: 'AMY D5', attr: 'azul', classe: 'healer' },
 
-    // VERDE
-    { id: 'tia', nome: 'TIA (SR)', attr: 'verde', classe: 'tank' },
-    { id: 'ai_t', nome: 'AI (T)', attr: 'verde', classe: 'tank' },
-    { id: 'sieg_t', nome: 'SIEG (T)', attr: 'verde', classe: 'tank' },
-    { id: 'elesis', nome: 'ELESIS (SR)', attr: 'verde', classe: 'assault' },
-    { id: 'vanessa', nome: 'VANESSA (SR)', attr: 'verde', classe: 'assault' },
-    { id: 'brahmashell', nome: 'BRAHMASHELL (SR)', attr: 'verde', classe: 'assault' },
-    { id: 'lire', nome: 'LIRE (SR)', attr: 'verde', classe: 'ranger' },
-    { id: 'shisamoo', nome: 'SHISAMOO (SR)', attr: 'verde', classe: 'ranger' },
-    { id: 'lire_s', nome: 'LIRE (S)', attr: 'verde', classe: 'ranger' },
-    { id: 'lapis', nome: 'LAPIS (SR)', attr: 'verde', classe: 'ranger' },
-    { id: 'mari', nome: 'MARI (SR) D10', attr: 'verde', classe: 'mage' },
-    { id: 'grandiel_t', nome: 'GRANDIEL (T)', attr: 'verde', classe: 'mage' },
-    { id: 'myst_t', nome: 'MYST (T)', attr: 'verde', classe: 'mage' },
-    { id: 'agnecia', nome: 'AGNECIA (SR)', attr: 'verde', classe: 'mage' },
-    { id: 'rey', nome: 'REY (SR)', attr: 'verde', classe: 'mage' },
-    { id: 'deia_t', nome: 'DEIA (T)', attr: 'verde', classe: 'healer' },
-    { id: 'urara', nome: 'URARA (SR)', attr: 'verde', classe: 'healer' },
-    { id: 'rey_t', nome: 'REY (T)', attr: 'verde', classe: 'healer' }
+// VERDE
+{ id: 'tia', nome: 'TIA (SR)', attr: 'verde', classe: 'tank' },
+{ id: 'ai_t', nome: 'AI (T)', attr: 'verde', classe: 'tank' },
+{ id: 'sieg_t', nome: 'SIEG (T)', attr: 'verde', classe: 'tank' },
+{ id: 'elesis', nome: 'ELESIS (SR)', attr: 'verde', classe: 'assault' },
+{ id: 'vanessa', nome: 'VANESSA (SR)', attr: 'verde', classe: 'assault' },
+{ id: 'brahmashell', nome: 'BRAHMASHELL (SR)', attr: 'verde', classe: 'assault' },
+{ id: 'lire', nome: 'LIRE (SR)', attr: 'verde', classe: 'ranger' },
+{ id: 'shisamoo', nome: 'SHISAMOO (SR)', attr: 'verde', classe: 'ranger' },
+{ id: 'lire_s', nome: 'LIRE (S)', attr: 'verde', classe: 'ranger' },
+{ id: 'lapis', nome: 'LAPIS (SR)', attr: 'verde', classe: 'ranger' },
+{ id: 'mari', nome: 'MARI (SR) D10', attr: 'verde', classe: 'mage' },
+{ id: 'grandiel_t', nome: 'GRANDIEL (T)', attr: 'verde', classe: 'mage' },
+{ id: 'myst_t', nome: 'MYST (T)', attr: 'verde', classe: 'mage' },
+{ id: 'agnecia', nome: 'AGNECIA (SR)', attr: 'verde', classe: 'mage' },
+{ id: 'rey', nome: 'REY (SR)', attr: 'verde', classe: 'mage' },
+{ id: 'deia_t', nome: 'DEIA (T)', attr: 'verde', classe: 'healer' },
+{ id: 'urara', nome: 'URARA (SR)', attr: 'verde', classe: 'healer' },
+{ id: 'rey_t', nome: 'REY (T)', attr: 'verde', classe: 'healer' }
 ];
 
 const ATRIBUTOS = [
     { id: 'vermelho', ico: 'imgs/vermelho.webp', nome: 'Vermelho' },
-    { id: 'verde', ico: 'imgs/verde.webp', nome: 'Verde' },
-    { id: 'azul', ico: 'imgs/azul.webp', nome: 'Azul' }
+{ id: 'verde', ico: 'imgs/verde.webp', nome: 'Verde' },
+{ id: 'azul', ico: 'imgs/azul.webp', nome: 'Azul' }
 ];
 
 const CLASSES = [
     { id: 'tank', ico: 'imgs/tank.webp', nome: 'Guardião' },
-    { id: 'assault', ico: 'imgs/assault.webp', nome: 'Guerreiro' },
-    { id: 'dps', ico: 'imgs/ranger.webp', nome: 'DPS' },
-    { id: 'healer', ico: 'imgs/healer.webp', nome: 'Sacerdote' }
+{ id: 'assault', ico: 'imgs/assault.webp', nome: 'Guerreiro' },
+{ id: 'dps', ico: 'imgs/ranger.webp', nome: 'DPS' },
+{ id: 'healer', ico: 'imgs/healer.webp', nome: 'Sacerdote' }
 ];
 
 let tbSelectedSlot = null;
@@ -276,8 +276,8 @@ const clearBtn = document.getElementById('tb-clear-btn');
 if (clearBtn) clearBtn.addEventListener('click', clearTeam);
 
 /* =========================================================
-   Carrossel de selos
-   ========================================================= */
+ C arrossel de selos            *
+ ========================================================= */
 (function initCarousel() {
     const track = document.getElementById('selos-track');
     const prevBtn = document.getElementById('btn-prev');
@@ -313,8 +313,8 @@ if (clearBtn) clearBtn.addEventListener('click', clearTeam);
 })();
 
 /* =========================================================
-   FREE-FLOW ORPHAN DETECTOR (Bento Grid Banner)
-   ========================================================= */
+ F REE-FLOW ORPHAN DETECTOR (Ben*to Grid Banner)
+ ========================================================= */
 let isBentoUpdating = false;
 
 function updateBentoGrid() {
@@ -328,7 +328,7 @@ function updateBentoGrid() {
             if (cards.length < 2) return;
 
             const gridCols = window.getComputedStyle(grid).gridTemplateColumns.split(' ').length;
-            if (gridCols === 1) { isBentoUpdating = false; return; } // Mobile não faz nada
+            if (gridCols === 1) { isBentoUpdating = false; return; }
 
             // 2. Limpa as classes antes de medir para pegar o tamanho real
             cards.forEach(card => {
@@ -385,3 +385,170 @@ document.querySelectorAll('.grid').forEach(grid => observer.observe(grid));
 
 // Executa uma vez no carregamento inicial
 setTimeout(updateBentoGrid, 100);
+
+
+/* =========================================================
+ *  Tabela de Equipamentos por Classe
+ * ========================================================= */
+(function initEquipmentTable() {
+    const tabs = document.querySelectorAll('#eq-tabs button');
+    const pvpToggle = document.getElementById('eq-pvp-toggle');
+    const tableBody = document.getElementById('eq-table-body');
+    const tableEl = document.querySelector('.eq-table');
+
+    if (!tabs.length || !tableBody) return;
+
+    // ESTADO ATUAL
+    let currentClass = 'guardiao';
+    let isPvP = false;
+
+    // =====================================================================
+    // DADOS (Substitua os textos abaixo com os equipamentos corretos)
+    // =====================================================================
+    const equipmentData = {
+        guardiao: {
+            pve: {
+                linha1: ['Vitalidade', 'Vitalidade', 'Vitalidade', 'Vitalidade', 'Vitalidade'],
+                linha2: ['Aumentar Debuff em Inimigo', 'Aumentar Dano em Boss', 'Defender Crítico', 'Reduzir Dano Crítico Recebido', 'Reduzir Dano Crítico Recebido'],
+                encantamento: ['CD', 'CD', 'Vitalidade', 'Skill DMG Reduction', 'Skill DMG Reduction']
+            },
+            pvp: {
+                linha1: ['Vitalidade', 'Vitalidade', 'Vitalidade', 'Vitalidade', 'Vitalidade'],
+                linha2: ['Aumentar Debuff em Inimigo', 'Reduzir Dano Recebido no PvP', 'Defender Crítico', 'Reduzir Dano Crítico Recebido', 'Reduzir Dano Crítico Recebido'],
+                encantamento: ['CD', 'CD', 'Vitalidade', 'Skill DMG Reduction', 'Skill DMG Reduction']
+            }
+        },
+        guerreiro: {
+            pve: {
+                linha1: ['Atk Físico', 'Atk Físico',  'Atk Físico', 'Atk Físico', 'Atk Físico'],
+                linha2: ['Aumentar Debuff em Inimigo', 'Aumentar Dano em Boss',  'Chance de Crítico', 'Dano Crítico', 'Dano Crítico'],
+                encantamento: ['CD', 'CD', 'Atk Físico', 'Skill DMG','Skill DMG']
+            },
+            pvp: {
+                linha1: ['Vitalidade', 'Vitalidade', 'Vitalidade', 'Vitalidade', 'Vitalidade'],
+                linha2: ['Aumentar Debuff em Inimigo', 'Reduzir Dano Recebido no PvP', 'Defender Crítico', 'Reduzir Dano Crítico Recebido', 'Reduzir Dano Crítico Recebido'],
+                encantamento: ['CD', 'CD', 'Vitalidade', 'Skill DMG Reduction', 'Skill DMG Reduction']
+            }
+        },
+        atirador: {
+            pve: {
+                linha1: ['Atk Físico', 'Atk Físico',  'Atk Físico', 'Atk Físico', 'Atk Físico'],
+                linha2: ['Aumentar Dano Verdadeiro', 'Aumentar Dano em Boss', 'Chance de Crítico', 'Dano Crítico', 'Dano Crítico'],
+                encantamento: ['CD', 'CD', 'Atk Físico', 'Basic DMG','Basic DMG']
+            },
+            pvp: {
+                linha1: ['Atk Físico', 'Atk Físico',  'Atk Físico', 'Atk Físico', 'Atk Físico'],
+                linha2: ['Aumentar Dano Verdadeiro', 'Aumentar Dano em PvP', 'Chance de Crítico', 'Dano Crítico', 'Dano Crítico'],
+                encantamento: ['Chance de Crit.', 'Chance de Crit.', 'Atk. Físico', 'Basic DMG', 'Basic DMG']
+            }
+        },
+        mago: {
+            pve: {
+                linha1: ['Atk Magico','Atk Magico','Atk Magico','Atk Magico','Atk Magico'],
+                linha2: ['Aumentar Dano Verdadeiro', 'Aumentar Dano em Boss', 'Chance de Crítico', 'Dano Crítico', 'Dano Crítico'],
+                encantamento: ['CD', 'Chance de Crit', 'Atk Magico', 'Skill DMG','Skill DMG']
+            },
+            pvp: {
+                linha1: ['Atk Magico','Atk Magico','Atk Magico','Atk Magico','Atk Magico'],
+                linha2: ['Aumentar Dano Verdadeiro', 'Aumentar Dano em PvP', 'Chance de Crítico', 'Dano Crítico', 'Dano Crítico'],
+                encantamento: ['Chance de Crit', 'Chance de Crit', 'Atk Magico', 'Skill DMG','Skill DMG']
+            },
+        },
+        suporte: {
+            pve: {
+                linha1: ['Vitalidade', 'Vitalidade', 'Vitalidade', 'Vitalidade', 'Vitalidade'],
+                linha2: ['Aumentar Debuff em Inimigo', 'Aumentar Dano em Boss', 'Defender Crítico', 'Reduzir Dano Crítico Recebido', 'Reduzir Dano Crítico Recebido'],
+                encantamento: ['CD', 'CD', 'Vitalidade', 'Skill DMG Reduction', 'Skill DMG Reduction']
+            },
+            pvp: {
+                linha1: ['Vitalidade', 'Vitalidade', 'Vitalidade', 'Vitalidade', 'Vitalidade'],
+                linha2: ['Aumentar Debuff em Inimigo', 'Reduzir Dano Recebido no PvP', 'Defender Crítico', 'Reduzir Dano Crítico Recebido', 'Reduzir Dano Crítico Recebido'],
+                encantamento: ['CD', 'CD', 'Vitalidade', 'Skill DMG Reduction', 'Skill DMG Reduction']
+            },
+        }
+    };
+
+    // =====================================================================
+    // FUNÇÕES
+    // =====================================================================
+    let tableTimeoutId;
+    /*Sugestão da IA*/
+    function renderTable() {
+        const mode = isPvP ? 'pvp' : 'pve';
+        const data = equipmentData[currentClass][mode];
+
+        // Atualiza o visual da tabela se for PvP
+        if (isPvP) {
+            tableEl.classList.add('pvp-active');
+            pvpToggle.classList.add('pvp-on');
+            pvpToggle.textContent = 'PvP: ON';
+            pvpToggle.setAttribute('aria-pressed', 'true');
+        } else {
+            tableEl.classList.remove('pvp-active');
+            pvpToggle.classList.remove('pvp-on');
+            pvpToggle.textContent = 'PvP: OFF';
+            pvpToggle.setAttribute('aria-pressed', 'false');
+        }
+
+        // ADICIONA O ATRIBUTO PARA O CSS SABER QUAL CLASSE ESTÁ ATIVA
+        tableEl.dataset.currentClass = currentClass;
+
+        // Transição suave: esmaece, troca o conteúdo, volta
+        tableBody.classList.add('is-updating');
+
+        clearTimeout(tableTimeoutId);
+        tableTimeoutId = setTimeout(() => {
+            // FUNÇÃO QUE ADICIONA AS CLASSES DE CORES NAS CÉLULAS
+            const buildCells = (arr) => {
+                return arr.map((item, index) => {
+                    let cls = '';
+                    if (index === 0) cls = 'cell-arma';
+                    else if (index === 1) cls = 'cell-subarma';
+                    else if (index === 2) cls = 'cell-armadura';
+                    else if (index === 3 || index === 4) cls = 'cell-subarmadura';
+
+                    return `<td class="${cls}">${item}</td>`;
+                }).join('');
+            };
+
+            const html = `
+            <tr>
+            <td scope="row">Linha 1</td>
+            ${buildCells(data.linha1)}
+            </tr>
+            <tr>
+            <td scope="row">Linha 2</td>
+            ${buildCells(data.linha2)}
+            </tr>
+            <tr>
+            <td scope="row">Encantamento</td>
+            ${buildCells(data.encantamento)}
+            </tr>
+            `;
+            tableBody.innerHTML = html;
+            tableBody.classList.remove('is-updating');
+        }, 150); // Metade da transição
+    }
+
+    // Eventos
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => {
+                t.classList.remove('active');
+                t.setAttribute('aria-selected', 'false');
+            });
+            tab.classList.add('active');
+            tab.setAttribute('aria-selected', 'true');
+            currentClass = tab.dataset.class;
+            renderTable();
+        });
+    });
+
+    pvpToggle.addEventListener('click', () => {
+        isPvP = !isPvP;
+        renderTable();
+    });
+
+    renderTable();
+
+})();
