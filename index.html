@@ -271,6 +271,44 @@
           </div>
         </article>
 
+        <!-- NOVO CARD: TABELA DE EQUIPAMENTOS POR CLASSE -->
+        <article class="card block--full">
+          <h2>Equipamento por Classe</h2>
+          <p>Selecione a classe e alterne para PvP para ver a configuração recomendada.</p>
+
+          <div class="eq-controls">
+            <!-- Abas de Classes -->
+            <div class="eq-tabs" id="eq-tabs">
+              <button class="active" data-class="guardiao">Guardião</button>
+              <button data-class="guerreiro">Guerreiro</button>
+              <button data-class="atirador">Atirador</button>
+              <button data-class="mago">Mago</button>
+              <button data-class="suporte">Suporte</button>
+            </div>
+            <!-- Botão Toggle PvP -->
+            <button type="button" class="btn btn--outline" id="eq-pvp-toggle">PvP: OFF</button>
+          </div>
+
+          <!-- Container Responsivo da Tabela -->
+          <div class="table-responsive">
+            <table class="eq-table">
+              <thead>
+                <tr>
+                  <th>Equipamento</th>
+                  <th>Arma</th>
+                  <th>Subarma</th>
+                  <th>Armadura</th>
+                  <th>Subarmadura</th>
+                  <th>Subarmadura</th>
+                </tr>
+              </thead>
+              <tbody id="eq-table-body">
+                <!-- Preenchido via JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </article>
+
         <article class="card">
           <h2>Relicário</h2>
           <ul><li>Nível 80 na Pág. 1, apenas</li><li>Comece na Pág. 2</li></ul>
