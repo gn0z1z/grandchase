@@ -9,7 +9,7 @@
   <meta name="theme-color" content="#D1F2EB" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#34495E" media="(prefers-color-scheme: dark)">
 
-  <link rel="icon" type="image/png" href="imgs/logo.png">
+  <link rel="icon" type="image/png" href="imgs/logo.webp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +20,11 @@
 <body>
 
 <nav class="nav" aria-label="Seções do Guia">
+  <!-- LOGO DO DESKTOP (Menu Lateral) -->
+  <div class="nav-brand">
+    <img src="imgs/logo.webp" alt="Grand Chase">
+  </div>
+
   <a href="#glossario" aria-current="true">Glossário</a>
   <a href="#times">Times &amp; pets</a>
   <a href="#recursos">Recursos</a>
@@ -32,7 +37,12 @@
 
   <header class="hero">
     <div class="hero-text">
-      <h1>Guia de progressão</h1>
+      <!-- LOGO DO MOBILE (Ao lado do título) -->
+      <div class="hero-title-row">
+        <img src="imgs/logo.webp" alt="Grand Chase" class="hero-logo">
+        <h1>Guia de progressão</h1>
+      </div>
+
       <p>O que priorizar, onde gastar e o que evitar para evoluir sem desperdiçar recursos.</p>
     </div>
     <div class="orbs" aria-hidden="true">
@@ -143,8 +153,7 @@
             <p>Se por acaso estiver tomando um cacete, use <b>Bily, Selena (T) ou Musa</b>.</p>
           </div>
           <div class="banner-art" aria-hidden="true">
-          <img src="imgs/avulsas/Pets.webp" alt="">
-          </div>
+          <img src="imgs/avulsas/Pets.webp" alt="Pets"></div>
         </article>
       </div>
     </section>
@@ -189,7 +198,7 @@
             </ul>
           </div>
           <div class="banner-art" aria-hidden="true">
-          <img src="imgs/avulsas/Kyle.webp" alt="">
+          <img src="imgs/avulsas/Expresso.webp" alt="Expresso">
           </div>
         </article>
 
@@ -210,7 +219,7 @@
             </div>
           </div>
           <div class="banner-art" aria-hidden="true">
-          <img src="imgs/avulsas/Expresso.webp" alt="">
+          <img src="imgs/avulsas/Kyle.webp" alt="Skin do Kyle">
           </div>
         </article>
       </div>
@@ -314,7 +323,7 @@
             <p class="stat-line"><span class="stat">É melhor ter 1 time T3 do que 1 herói T6</span></p>
           </div>
           <div class="banner-art" aria-hidden="true">
-          <img src="imgs/avulsas/Transcendencia.webp" alt="">
+                    <img src="imgs/avulsas/Transcendencia.webp" alt="Transcendência">
           </div>
         </article>
       </div>
@@ -410,7 +419,7 @@
           </ul>
         </article>
 
-        <!-- CARD COM BANNER ART -->
+        <!-- CARD COM BANNER ART (Mercúria) -->
         <article class="card">
           <div class="card-content">
             <h2>Mercúria</h2>
@@ -419,13 +428,12 @@
               <li>Depois pode começar a comprar relicário.</li>
             </ul>
           </div>
-
-          <!-- A imagem deve ficar nesta div aqui, que é irmã da card-content -->
           <div class="banner-art" aria-hidden="true">
-            <img src="imgs/avulsas/Mercuria.webp" alt="">
+            <img src="imgs/avulsas/Mercuria.webp" alt="Wallpaper da Mercúria">
           </div>
         </article>
-        <!-- CARD COM BANNER ART -->
+
+        <!-- CARD COM BANNER ART (Capítulo Final) -->
         <article class="card card--tone">
           <div class="card-content">
             <h2>Capítulo Final</h2>
@@ -437,7 +445,7 @@
             </ul>
           </div>
           <div class="banner-art" aria-hidden="true">
-          <img src="imgs/avulsas/Basteta.webp" alt="">
+          <img src="imgs/avulsas/Basteta.webp" alt="Wallpaper da Mercúria">
           </div>
         </article>
       </div>
@@ -445,7 +453,7 @@
 
   </main>
 
-  <footer>• Guia de progressão • Grand Chase Mobile • Este é um projeto de fã e não tem filiação com a Kog Co. • </footer>
+  <footer>Guia de progressão • Grand Chase Mobile</footer>
 </div>
 
 </body>
